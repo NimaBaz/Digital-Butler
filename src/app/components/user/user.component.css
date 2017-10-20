@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+.container {
+    width: 300px;
+    margin: auto;
+}
+#A1 {
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 95px;
+    border: 15px green;
+    float: left;
+    padding: 25px;
+    margin: 10px;
+}
+#A2 {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 95px;
+    border: 15px green;
+    float: left;
+    padding: 25px;
+    margin: 10px;
+}
+#A3 {
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 95px;
+    border: 15px green;
+    float: left;
+    padding: 25px;
+    margin: 10px;
+}
+#split {
+    width: 20px;
+    height: 100px;
+    float: left;
+    background-color: lightgray;
+}
+#C {
+    background-color: rgb(255, 255, 255);
+    width: 1350px;
+    height: 850px;
+    border: 15px lightgray;
+    float: left;
+    padding: 25px;
+    margin: 10px;
+}
+#D {
+    background-color: rgb(255, 255, 255);
+    width: 260px;
+    height: 850px;
+    border: 15px lightgray;
+    float: left;
+    padding: 25px;
+    margin: 10px;
+}
+#E {
+    background-color: rgb(255, 0, 0);
+    width: 45px;
+    height: 850px;
+    float: left;
+    padding: 25px;
+    margin: 10px;
+    cursor: move;
+}
+#clear {
+    clear: both;
+}
+a {
+    color: purple;
+}
+* {
+    color: rgb(0, 0, 0);
+}
+#box {
+    background-color: lightgray;
+    width: 1920px;
+    height: 1080px;
+    padding: 15px;
+    margin: 15px;
+}
