@@ -15,6 +15,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
     //this.name = 'Hello, World!';
+    //$("h1").html("hi");
     $("#E").draggable();
   }
 
