@@ -1,67 +1,64 @@
 @charset "utf-8";
 /* CSS Document */
-.container {
-    width: 300px;
-    margin: auto;
+.row {
+    text-align: center;
+}
+body{
+    padding:0;
+}
+[class*="col-"] {
+    margin-bottom: 15px;
+}
+.container{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
 }
 #A1 {
     background-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 95px;
+    
+    height: 10em;
     border: 15px green;
-    float: left;
-    padding: 25px;
-    margin: 10px;
+}
+a {
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #A2 {
     background-color: rgb(255, 255, 255);
-    width: 400px;
-    height: 95px;
-    border: 15px green;
-    float: left;
-    padding: 25px;
-    margin: 10px;
+    height: 10em;
+    text-align: center;
+    padding:20px;
 }
 #A3 {
     background-color: rgb(255, 255, 255);
-    width: 600px;
-    height: 95px;
-    border: 15px green;
-    float: left;
-    padding: 25px;
-    margin: 10px;
+    height: 10em;
+    text-align: center;
+    padding:20px;
 }
-#split {
-    width: 20px;
-    height: 100px;
-    float: left;
-    background-color: lightgray;
-}
-#C {
+
+#B {
     background-color: rgb(255, 255, 255);
-    width: 1350px;
-    height: 850px;
+    margin-top:20px;
+    height: 58em;
     border: 15px lightgray;
-    float: left;
-    padding: 25px;
-    margin: 10px;
+    text-align: center;
+
+   
 }
-#D {
+#B2 {
     background-color: rgb(255, 255, 255);
-    width: 260px;
-    height: 850px;
+    margin-top:20px;
+    height: 58em;
     border: 15px lightgray;
-    float: left;
-    padding: 25px;
-    margin: 10px;
+
 }
 #E {
-    background-color: rgb(255, 0, 0);
-    width: 45px;
-    height: 850px;
-    float: left;
-    padding: 25px;
-    margin: 10px;
+    background-color: white;
+
+    height: 55em;
+ 
     cursor: move;
 }
 #clear {
@@ -73,7 +70,7 @@ a {
 * {
     color: rgb(0, 0, 0);
 }
-#box {
+.container4 {
     background-color: lightgray;
     width: 1920px;
     height: 1080px;

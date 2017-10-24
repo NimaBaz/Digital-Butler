@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var jquery:any;
+declare const $: any;
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -13,7 +14,8 @@ export class UserComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.name = 'Hello, World!';
+    //this.name = 'Hello, World!';
+    $("#E").draggable();
   }
 
   onClick(){
