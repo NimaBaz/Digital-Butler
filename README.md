@@ -17,7 +17,7 @@ To check in code:
 
 git add .
 
-git commit -m "try to be concise with message with debugging"
+git commit -m "try to be concise with message for debugging"
 
 git pull
 
