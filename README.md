@@ -21,7 +21,7 @@ git commit -m "try to be concise with message for debugging"
 
 git pull
 
-if there are are merge conflict do
+if there are merge conflict do
 
 git mergetool
 
