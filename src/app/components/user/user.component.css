@@ -24,18 +24,19 @@ span .glyphicon {
 }
 span {
    
-    height: 12%;
+   
     width: 100%;
-
+    position: relative;
     text-align: right;    
-    background-color:white;
+    background-color:red;
     float: right;
 }
 #box1 {
     background-color: rgb(255, 255, 255);
     text-align: center;
     height: 10em;
-    padding: 10px;
+    overflow: hidden;
+    padding: 20px;
  
 }
 button {
@@ -55,28 +56,33 @@ a {
     background-color: rgb(255, 255, 255);
     height: 10em;
     text-align: center;
+    overflow:hidden;
     padding:20px;
 }
 #box3 {
     background-color: rgb(255, 255, 255);
     height: 10em;
     text-align: center;
+    overflow:hidden;
     padding:20px;
 }
 
 #box4 {
     background-color: rgb(255, 255, 255);
-    margin-top:20px;
+   
     height: 58em;
     border: 15px lightgray;
+    overflow: hidden;
     text-align: center;
-
+    padding: 20px;
    
 }
-#B2 {
+#box5 {
     background-color: rgb(255, 255, 255);
-    margin-top:20px;
+ 
     height: 58em;
+    overflow: hidden;
+    padding: 20px;
     border: 15px lightgray;
 
 }
