@@ -8,7 +8,9 @@ declare const $: any;
 })
 export class UserComponent implements OnInit {
   name:string;
-
+  width:number;
+  id:number;
+  minimId:number;
   constructor() {
     console.log('constructor ran..');
   }
@@ -17,11 +19,29 @@ export class UserComponent implements OnInit {
     //this.name = 'Hello, World!';
     //$("h1").html("hi");
     $("#E").draggable();
-  }
-
-  onClick(){
     
+    this.width = $("#A1").width();
+    console.log(this.width);
+    $("span").width = this.width;
+ 
+  
   }
+    minimize(event) {
+    
+      //this.minimId = event.currentTarget.parentElement.parentElement.getAttribute("id");
+      this.minimId = event.target.parentElement.nextElementSibling.getAttribute("id")
+      $("#" + this.minimId).slideToggle();
+
+    }
+  remove(event) { 
+    this.id = event.target.parentElement.parentElement.getAttribute("id");
+    
+    $("#"+ this.id).hide();
+
+  }
+  
+ 
+
   
   
 }
