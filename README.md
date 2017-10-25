@@ -30,3 +30,13 @@ and merge the appropriate lines of code
 after all merge conflicts are resolved
 
 git push
+
+********************************************************
+To create a new project after set-up:
+(This method creates all of the files that an angular project has)
+
+ng new 'projectName'
+
+cd 'projectName'
+
+ng serve
