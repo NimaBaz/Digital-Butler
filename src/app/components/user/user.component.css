@@ -33,29 +33,24 @@ span ul [class*="col-lg-2"] {
 
 [class*="col-"] {
     margin-bottom: 15px;
+  
 }
 .container{
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    position: fixed;
 }
 span {
-   
-   
+    padding-top: 5px;
+    height: 30px;
     width: 100%;
     position: relative;
     text-align: right;    
     background-color:white;
     float: right;
 }
-#box1 {
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    height: 10em;
-    overflow: hidden;
-    padding: 20px;
- 
-}
+
 button {
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -69,21 +64,38 @@ a {
     top: 50%;
     transform: translateY(-50%);
 }
+#box1 {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 11em;
+    overflow: hidden;
+    padding: 20px;
+ 
+}
 #box2 {
     background-color: rgb(255, 255, 255);
-    height: 10em;
+    height: 11em;
     text-align: center;
     overflow:hidden;
     padding:20px;
 }
 #box3 {
     background-color: rgb(255, 255, 255);
-    height: 10em;
-    text-align: center;
+    height: 11em;
+    
     overflow:hidden;
     padding:20px;
 }
-
+#box3text {
+    float: right;
+    font-size: 12px;
+}
+h3 {
+    display:inline;
+    margin-right: 79%;
+    
+    
+}
 #box4 {
     background-color: rgb(255, 255, 255);
    
