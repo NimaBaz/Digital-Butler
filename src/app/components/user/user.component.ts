@@ -26,13 +26,22 @@ export class UserComponent implements OnInit {
  
   
   }
-    minimize(event) {
-    
-      //this.minimId = event.currentTarget.parentElement.parentElement.getAttribute("id");
-      this.minimId = event.target.parentElement.nextElementSibling.getAttribute("id")
-      $("#" + this.minimId).slideToggle();
+  minimize2(event) {
+  
+    //this.minimId = event.currentTarget.parentElement.parentElement.getAttribute("id");
+    this.minimId = event.target.parentElement.parentElement
+    .parentElement.nextElementSibling.getAttribute("id");
+   
+    $("#" + this.minimId).slideToggle();
 
-    }
+  }
+  minimize(event) {
+  
+    //this.minimId = event.currentTarget.parentElement.parentElement.getAttribute("id");
+    this.minimId = event.target.parentElement.nextElementSibling.getAttribute("id");
+    $("#" + this.minimId).slideToggle();
+
+  }
   remove(event) { 
     this.id = event.target.parentElement.parentElement.getAttribute("id");
     

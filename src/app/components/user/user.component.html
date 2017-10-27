@@ -9,10 +9,8 @@
       <div class="jumbotron">
 
         <div class="row top-buffer">
+            
           <div class="col-lg-3 col-md-3">
-            
-
-            
             <div id="A1" class="topBox">
                 <span > 
                     <i (click)="minimize($event)" class="glyphicon glyphicon-chevron-down"></i>
@@ -54,9 +52,36 @@
          
            <div class="col-lg-8 col-md-8">
             <div id="B">
-                <span > 
-                        <i (click)="minimize($event)" class="glyphicon glyphicon-chevron-down"></i>
-                        <button (click)="remove($event)">X</button>
+        
+                <span class="text-nowrap" id="hi"> 
+                        <ul>
+                            <div class="col-lg-1">
+                                <li><a href="#">NETWORK DEVICES</a></li>
+                            </div>
+                            <div class="col-lg-1">
+                                <li><a href="#">Internet UP/DOWN</a></li>
+                            </div>
+                                
+                            <div class="col-lg-2">
+                                <li><a href="#">AVAILABLE UP/DOWN BANDWIDTH</a></li>
+                            </div>
+                               
+                            <div class="col-lg-1">
+                                <li><a href="#">WAN TX/RX PACKETS</a></li>
+                            </div>
+                                
+                            <div class="col-lg-1">
+                                <li><a href="#">WIFI NEIGHBOR LIST</a></li>
+                            </div>
+                                
+                            <div class="col-lg-1">
+                                <li><a href="#">NEIGHBOR WIFI INTERFERENCE</a></li>
+                            </div>
+                            <div class="col-lg-3" id="hello">
+                                    <i (click)="minimize2($event)" class="glyphicon glyphicon-chevron-down"></i>
+                                    <button (click)="remove($event)">X</button>
+                            </div>
+                        </ul>
                 </span>
                     
                 <div id="box4">

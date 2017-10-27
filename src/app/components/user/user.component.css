@@ -13,7 +13,24 @@ button {
 span .glyphicon {
     margin-right: 5px;
     font-size:1.2em;
+    
 }
+
+span ul [class*="col-lg-3"] {
+    font-size: 12px;
+    width: 11.2856571%;
+}
+span ul [class*="col-lg-1"] {
+    font-size: 12px;
+    width: 13.2856571%;
+}
+span ul [class*="col-lg-2"] {
+    font-size: 12px;
+    width: 20.2856571%;
+}
+
+
+
 [class*="col-"] {
     margin-bottom: 15px;
 }
@@ -28,7 +45,7 @@ span {
     width: 100%;
     position: relative;
     text-align: right;    
-    background-color:red;
+    background-color:white;
     float: right;
 }
 #box1 {
@@ -76,6 +93,9 @@ a {
     text-align: center;
     padding: 20px;
    
+}
+ul li {
+    display: inline;
 }
 #box5 {
     background-color: rgb(255, 255, 255);
