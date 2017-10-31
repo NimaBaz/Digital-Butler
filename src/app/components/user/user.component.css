@@ -17,9 +17,6 @@ span .glyphicon {
 }
 
 
-
-
-
 [class*="col-"] {
     margin-bottom: 15px;
 }
@@ -53,10 +50,10 @@ a {
 }
 #box1 {
     background-color: rgb(255, 255, 255);
-    text-align: center;
     height: 11em;
     overflow: hidden;
     padding: 20px;
+    
  
 }
 #box1img {
@@ -71,16 +68,15 @@ a {
     margin-right:2px;
     margin-bottom: 5px;
 }
-#box1text {
-    float: right;
-    margin-left: 20%;
-    font-size: 12px;
-    padding-left: 0;
-}
+
 #provider {
     max-width: 90%;
     max-height: 90%;
     float:left;
+}
+#box1text {
+  
+    margin-right: 10%;
 }
 #box1text p {
     font-size: 12px;
@@ -103,18 +99,8 @@ a {
     padding:20px;
 }
 
-#box3text {
-    float: right;
-    margin-left: 20%;
-    font-size: 15px;
-    padding-left: 0;
-    
-}
 
-#A1title {
-    display:inline;
-    margin-right: 60%;
-}
+
 
 h3 {
     display:inline;
