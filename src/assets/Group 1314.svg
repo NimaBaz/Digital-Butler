@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3839 729 40 63">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #c1b8b8;
+      }
+
+      .cls-1 {
+        font-size: 12px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_1314" data-name="Group 1314" transform="translate(2005 142)">
+    <text id="Router_Info" data-name="Router 
+Info" class="cls-1" transform="translate(1854 635)"><tspan x="-19.225" y="0">Router </tspan><tspan x="-10.386" y="12">Info</tspan></text>
+    <g id="router" transform="translate(1838 587)">
+      <path id="Path_162" data-name="Path 162" class="cls-2" d="M0,0H31V31H0Z"/>
+      <path id="Path_163" data-name="Path 163" class="cls-3" d="M25.089,7.089l1-1c-1.825-1.825-3.653-3-6-3a10.614,10.614,0,0,0-7,3l1,1c1.565-1.434,4.044-3,6-3S23.524,5.654,25.089,7.089Zm-1,1a5.67,5.67,0,0,0-4-2,5.67,5.67,0,0,0-4,2l1,1c.913-.913,1.827-2,3-2s2.087,1.087,3,2Zm0,8h-3v-5h-2v5h-13a3.338,3.338,0,0,0-3,3v5c0,1.434,1.566,2,3,2h18c1.434,0,2-.566,2-2v-5C26.089,17.654,25.523,16.089,24.089,16.089Zm-15,6h-2v-2h2Zm5,0h-3v-2h3Zm5,0h-3v-2h3Z" transform="translate(0.911 0.911)"/>
+    </g>
+  </g>
+</svg>

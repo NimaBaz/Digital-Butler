@@ -229,6 +229,10 @@ function tickActions() {
 
   }
   
+  minimize3(id_) {
+    var div_to_toggle = '#' + id_ ;
+    $(div_to_toggle).slideToggle();
+  }
  
 
   

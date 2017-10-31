@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3838.5 599 36.5 52.75">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #616161;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        font-size: 12px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-4 {
+        stroke: #95989a;
+        stroke-width: 0.5px;
+      }
+    </style>
+  </defs>
+  <g id="Group_1455" data-name="Group 1455" transform="translate(1993 363)">
+    <g id="dashboard" transform="translate(1848 236)">
+      <path id="Path_189" data-name="Path 189" class="cls-1" d="M23.982,2.982h-18a3.271,3.271,0,0,0-3,3v18a3.271,3.271,0,0,0,3,3h18a3.271,3.271,0,0,0,3-3v-18A3.271,3.271,0,0,0,23.982,2.982Zm-13,19h-3v-10h3Zm5,0h-2v-14h2Zm6,0h-3v-6h3Z" transform="translate(1.018 1.018)"/>
+      <path id="Path_190" data-name="Path 190" class="cls-2" d="M0,0H32V32H0Z"/>
+    </g>
+    <text id="Report" class="cls-3" transform="translate(1846 281)"><tspan x="0" y="0">Report</tspan></text>
+    <line id="Line_52" data-name="Line 52" class="cls-4" x2="36" transform="translate(1845.5 288.5)"/>
+  </g>
+</svg>
