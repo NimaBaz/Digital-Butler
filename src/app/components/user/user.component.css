@@ -16,24 +16,12 @@ span .glyphicon {
     
 }
 
-span ul [class*="col-lg-3"] {
-    font-size: 12px;
-    width: 11.2856571%;
-}
-span ul [class*="col-lg-1"] {
-    font-size: 12px;
-    width: 13.2856571%;
-}
-span ul [class*="col-lg-2"] {
-    font-size: 12px;
-    width: 20.2856571%;
-}
+
 
 
 
 [class*="col-"] {
     margin-bottom: 15px;
-  
 }
 .container{
     margin: 0 auto;
