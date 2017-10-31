@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="2785 -283 70 71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#pattern);
+      }
+    </style>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 128 128">
+      <image width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAbdJREFUeJzt1jFqVGEYheGjDIgSREKKCCGpBUtJNpIlWGQxrkRCVmAR0gRxDamD2FtGC1uHFM7cz8l5HvirC3cO977DTAIAAAAAAAAAAAAA7LZnST4lOZ8ewojPqyQfkpxML2HE6fPpBcwSQDkBlBNAOQGUE0A5AZQTQDkBlBNAOQGUE0A5AZQTQDkBlBNAOQGUE0A5AZQTQDkBlBNAOQGUE0A5AZQTQDkBlBNAOQGUE0A5AZQTQDkBlBNAOQGUE0A5AZQTQDkBlBNAOQGUE0A5AZQTQDkBlBNAOQGUE0A5AZQTQDkBlBNAOQGUE0A5AZQTQDkBlBNAOQGUE0A5AZQTQDkBlBNAOQGUE0A5AZQTQDkBlBNAOQGUE0A5AZQTQDkBlFsl+ZrkaHrIgt4mebXm2s8k9wtumXY7PWDCRZJfa87HwV0jVtMD/uIgyeEW7//ukWvvt/jZ35P82OL9d9qbJJdJHrL+G7rr5yHJVZL9DT2zJ2Mvf36Ppl/QUudbktcbeXJPwIskXzL/UpY+N0lebuD5/ZP/4T/AaZLjJHfTQxZ2mOQsyfXwDgAAAAAAAAAAAABgp/0GP9jD8fQHcu0AAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <rect id="Rectangle_345" data-name="Rectangle 345" class="cls-1" width="70" height="71" transform="translate(2785 -283)"/>
+</svg>
