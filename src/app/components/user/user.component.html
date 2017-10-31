@@ -11,20 +11,24 @@
         <div class="row top-buffer">
             
           <div class="col-lg-3 col-md-3">
-            <div id="A1" class="topBox">
+            <div id="A1">
                 <span> 
-                    <h3 id="A1title">Internet Care</h3>
-                    <i (click)="minimize($event)" class="glyphicon glyphicon-chevron-down"></i>
-                    <button (click)="remove($event)">X</button>
+                    <div class="col-lg-8 text-nowrap">
+                            <h3>Internet Care</h3>
+                    </div>
+                    <div class="col-lg-4">
+                            <i (click)="minimize('box1')" class="glyphicon glyphicon-chevron-down"></i>
+                            <button (click)="remove($event)">X</button>
+                    </div>
                 </span>
                
                 <div id="box1">
                    
-                    <ul class="text-left text-nowrap" id="box1text"> 
+                    <ul class="text-nowrap" id="box1text"> 
                             
                         <div class="col-lg-4">
                             <a href="#">FAQ</a>
-                            <img id="provider" src="../assets/att.png">  
+                            
                         </div>           
                         <div class="col-lg-4 padding-right">   
                             <li>
@@ -36,7 +40,10 @@
                             <li><a href="#"> <img id="box1img" src="../assets/up.png">Up Speed</a>
                                 <p> 2.15 Mbps</p> 
                         </div>
-                        <div class="col-lg-4 padding-right text-right">
+                        <div class="col-lg-4">
+                            <img id="provider" src="../assets/ATT.png">  
+                        </div>
+                        <div class="col-lg-4">
                              
                             <li><a href="#"> <img id="box1img" src="../assets/dns.png">DNS Status</a>
                                 <p> UP</p>
@@ -54,11 +61,17 @@
                 </div>
             </div>
           </div>
-          <div  class="col-lg-2 col-md-3">
+          <div  class="col-lg-3 col-md-3">
               <div id="A2">
                     <span > 
-                            <i (click)="minimize($event)" class="glyphicon glyphicon-chevron-down"></i>
-                            <button (click)="remove($event)">X</button>
+                        <div class="col-lg-8 text-nowrap">
+                            <h3>Wifi&Local Network Care</h3>
+                        </div>
+                        <div class="col-lg-4">
+                                <i (click)="minimize('box2')" class="glyphicon glyphicon-chevron-down"></i>
+                                <button (click)="remove($event)">X</button>
+                        </div>
+                            
                     </span>
                         
                     <div id="box2">
@@ -68,44 +81,49 @@
                  
               </div>
           </div>
-          <div class="col-lg-6 col-md-6">
+          <div class="col-lg-5 col-md-6">
               <div id="A3">
                     <span >
-                            <h3>Device Care</h3>
-                           
-                            <i (click)="minimize($event)" class="glyphicon glyphicon-chevron-down"></i>
-                            <button (click)="remove($event)">X</button>
+                        <div class="col-lg-8 text-nowrap">
+                                <h3>Device Care</h3>
+                        </div>
+                        <div class="col-lg-4">
+                                <i (click)="minimize('box3')" class="glyphicon glyphicon-chevron-down"></i>
+                                <button (click)="remove($event)">X</button>
+                        </div>
+                            
+                      
                     </span>
                         
                     <div id="box3">
                            
                         <ul class="text-left" id="box3text"> 
-                            <div class="col-lg-4 padding-0">
+                            <div class="col-lg-4">
                                 <li><a href="#">Devices on 2.4GHZ</a>
                                     <p> <strong>5</strong></p>
                                 </li>   
                             </div>
-                            <div class="col-lg-4 padding-0">
+                            <div class="col-lg-4">
                                 <li><a href="#">Guest Devices</a>
                                     <p> <strong>1</strong></p> 
                                     </li>
                             </div>
-                            <div class="col-lg-4 padding-0">
+                            <div class="col-lg-4">
                                 <li><a href="#">Bandwitdh Hogs</a>
                                     <p> <strong>0</strong></p>   
                                     </li>
                             </div>
-                            <div class="col-lg-4 padding-1">
+                            <div class="col-lg-4">
                                 <li><a href="#">Devices on 5GHZ</a>
                                     <p> <strong>3</strong></p>  
                                 </li>
                             </div>
-                            <div class="col-lg-4 padding-1">
+                            <div class="col-lg-4">
                                 <li><a href="#">Wired Devices</a>
                                     <p> <strong>2</strong></p>
                                     </li>
                             </div>
-                            <div class="col-lg-4 padding-1">
+                            <div class="col-lg-4">
                                 <li><a href="#">Offline devices Hogs</a>
                                     <p> <strong>3</strong></p> 
                                 </li>
@@ -148,17 +166,14 @@
                                     
 
                                     <a href="#">NEIGHBOR WIFI INTERFERENCE
-                                        
                                     </a>
-                                  
-                         
                                 </li>
                                
                             </div>
                           
                                    
                         </ul>
-                        <i (click)="minimize2($event)" class="glyphicon glyphicon-chevron-down"></i>
+                        <i (click)="minimize('box4')" class="glyphicon glyphicon-chevron-down"></i>
                         <button (click)="remove($event)">X</button>
                 </span>
                
@@ -198,6 +213,7 @@
           </div>
         </div>
       </div>
+          
     </div>
     
 

@@ -207,19 +207,10 @@ function tickActions() {
  
   
   }
-  minimize2(event) {
-  
-    //this.minimId = event.currentTarget.parentElement.parentElement.getAttribute("id");
-    this.minimId = event.target.parentElement.nextElementSibling.getAttribute("id");
-   
-    $("#" + this.minimId).slideToggle();
 
-  }
-  minimize(event) {
-  
-    //this.minimId = event.currentTarget.parentElement.parentElement.getAttribute("id");
-    this.minimId = event.target.parentElement.nextElementSibling.getAttribute("id");
-    $("#" + this.minimId).slideToggle();
+  minimize(id_) {
+    
+    $("#" + id_).slideToggle();
 
   }
   remove(event) { 
