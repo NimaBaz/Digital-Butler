@@ -8,13 +8,13 @@ declare const $: any;
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-    name:string;
-    width:number;
-    id:number;
-    minimId:number;
-    constructor() {
-        console.log('constructor ran..');
-    }
+  name:string;
+  width:number;
+  id:number;
+  minimId:number;
+  constructor() {
+    console.log('constructor ran..');
+  }
 
     ngOnInit() {
         //this.name = 'Hello, World!';
@@ -28,6 +28,8 @@ export class UserComponent implements OnInit {
         var svg = d3.select("svg"),
         width = +svg.attr("width"),
         height = +svg.attr("height");
+        
+
 
         var nodes_data =  [
             {"name": "Router", "type": "router", "usage":20},
@@ -68,141 +70,149 @@ export class UserComponent implements OnInit {
             //add nodes
             .nodes(nodes_data);
         
-            function dist(d){
-                return d.dist;
-            }
+        function dist(d){
+            return d.dist;
+        }
+        
     
-            var radius= 40;
-                                    
-            var link_force =  d3.forceLink(links_data).distance(75)
-                .id(function(d) { return d.name;}); 
-                        
-            var charge_force = d3.forceManyBody().distanceMax(300).distanceMin(1300)
-                .strength(-1500);
-            
-            var attractForce = d3.forceManyBody().strength(-500); 
-            var repelForce = d3.forceManyBody().strength(1000).distanceMin(320);
-                
-            var center_force = d3.forceCenter(width / 2, height / 2);  
+        var radius= 40;
                                 
-            simulation
-                .force("charge_force", charge_force)
-                .force("center_force", center_force)
-                .force("links",link_force)
-                .force("attractForce",attractForce)
-                .force('collision', d3.forceCollide().radius(function(d) {
-                    return d.dist
-                }))
+        var link_force =  d3.forceLink(links_data).distance(75)
+            .id(function(d) { return d.name;}); 
                 
-            //add tick instructions: 
-            simulation.on("tick", tickActions );
+        var charge_force = d3.forceManyBody().distanceMax(300).distanceMin(1300)
+            .strength(-1500);
+    
+        var attractForce = d3.forceManyBody().strength(-500); 
+        var repelForce = d3.forceManyBody().strength(1000).distanceMin(320);
+        
+        var center_force = d3.forceCenter(width / 2, height / 2);  
+    
+    
 
-            //draw lines for the links 
-            var link = svg.append("g")
-                .attr("class", "links")
-                .selectAll("line")
-                .data(links_data)
-                .enter().append("line")
-                .attr("stroke-width", 4)
-                .style("stroke", linkColour);        
+                            
+        simulation
+            .force("charge_force", charge_force)
+            .force("center_force", center_force)
+            .force("links",link_force)
+            .force("attractForce",attractForce)
+            .force('collision', d3.forceCollide().radius(function(d) {
+            return d.dist
+            }))
+        
 
-            //draw circles for the nodes 
-            var node = svg.append("g")
-                    .attr("class", "nodes") 
-                    .selectAll("circle")
-                    .data(nodes_data)
-                    .enter()
-                    .append("circle")
-                    .attr("r", circleRadius)
-                    .attr("fill", circleColour)
-                    .attr("background-image", "find_code.png");                
+            
+        //add tick instructions: 
+        simulation.on("tick", tickActions );
+
+        //draw lines for the links 
+        var link = svg.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(links_data)
+            .enter().append("line")
+            .attr("stroke-width", 4)
+            .style("stroke", linkColour);        
+
+        //draw circles for the nodes 
+        var node = svg.append("g")
+            .attr("class", "nodes") 
+            .selectAll("circle")
+            .data(nodes_data)
+            .enter()
+            .append("circle")
+            .attr("r", circleRadius)
+            .attr("fill", circleColour)
+            .attr("background-image", "find_code.png");                
+            
+        var drag_handler = d3.drag()
+            .on("start", drag_start)
+            .on("drag", drag_drag)
+            .on("end", drag_end);   
+        
+        //drag_handler(node)
+
+        /** Functions **/
+        //Function to choose what color circle we have
+        //Let's return blue for males and red for females
+        function circleColour(d){
+            if(d.type =="strong"){
+                return "green";
+            } 
+            if(d.type =="average"){
+                return "orange";
+            }
+            if(d.type =="weak"){
+                return "red";
+            }
+            else {
+                return "white";
+            }
+        }
+            
+        function circleRadius(d){
+            return d.usage;   
+        }
+
+        //Function to choose the line colour and thickness 
+        //If the link type is "A" return green 
+        //If the link type is "E" return red 
+        function linkColour(d){
+            if(d.type == "A"){
+                return "grey";
+            } 
+
+            else {
+                return "red";
+            }
+        }
+
+
+        //drag handler
+        //d is the node 
+        function drag_start(d) {
+            if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+        }
+
+        function drag_drag(d) {
+            d.fx = d3.event.x;
+            d.fy = d3.event.y;
+        }
+
+
+        function drag_end(d) {
+            if (!d3.event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+            
+        function tickActions() {
+            //bounding box around the outside 
+            node
+                .attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
+                .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
                 
-            var drag_handler = d3.drag()
-                .on("start", drag_start)
-                .on("drag", drag_drag)
-                .on("end", drag_end);   
-            
-            //drag_handler(node)
-
-            /** Functions **/
-            //Function to choose what color circle we have
-            //Let's return blue for males and red for females
-            function circleColour(d){
-                if(d.type =="strong"){
-                    return "green";
-                } 
-                if(d.type =="average"){
-                    return "orange";
-                }
-                if(d.type =="weak"){
-                    return "red";
-                }
-                else {
-                    return "white";
-                }
-            }
-            
-            function circleRadius(d){    
-                return d.usage;   
-            }
-
-            //Function to choose the line colour and thickness 
-            //If the link type is "A" return green 
-            //If the link type is "E" return red 
-            function linkColour(d){
-                if(d.type == "A"){
-                    return "grey";
-                }
-                else {
-                    return "red";
-                }
-            }
-
-            //drag handler
-            //d is the node 
-            function drag_start(d) {
-                if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-                    d.fx = d.x;
-                    d.fy = d.y;
-            }
-
-            function drag_drag(d) {
-                d.fx = d3.event.x;
-                d.fy = d3.event.y;
-            }
-
-            function drag_end(d) {
-                if (!d3.event.active) simulation.alphaTarget(0);
-                d.fx = null;
-                d.fy = null;
-            }
-            
-            function tickActions() {
-                //bounding box around the outside 
-                node
-                    .attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
-                    .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
-                    
-                link
-                    .attr("x1", function(d) { return d.source.x; })
-                    .attr("y1", function(d) { return d.source.y; })
-                    .attr("x2", function(d) { return d.target.x; })
-                    .attr("y2", function(d) { return d.target.y; });
-            }
-            
+            link
+                .attr("x1", function(d) { return d.source.x; })
+                .attr("y1", function(d) { return d.source.y; })
+                .attr("x2", function(d) { return d.target.x; })
+                .attr("y2", function(d) { return d.target.y; });
+        }     
     }
 
     minimize(id_) { 
-        $("#" + id_).slideToggle();
+            $("#" + id_).slideToggle();
     }
 
     remove(event) { 
-        this.id = event.target.parentElement.parentElement.getAttribute("id");
-        $("#"+ this.id).hide();
+            this.id = event.target.parentElement.parentElement.getAttribute("id");
+            $("#"+ this.id).hide();
     }
 
     minimize3(id_) {
-        var div_to_toggle = '#' + id_ ;
-        $(div_to_toggle).slideToggle();
+            var div_to_toggle = '#' + id_ ;
+            $(div_to_toggle).slideToggle();
     }
 }
