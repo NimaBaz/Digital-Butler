@@ -16,24 +16,9 @@ span .glyphicon {
     
 }
 
-span ul [class*="col-lg-3"] {
-    font-size: 12px;
-    width: 11.2856571%;
-}
-span ul [class*="col-lg-1"] {
-    font-size: 12px;
-    width: 13.2856571%;
-}
-span ul [class*="col-lg-2"] {
-    font-size: 12px;
-    width: 20.2856571%;
-}
-
-
 
 [class*="col-"] {
     margin-bottom: 15px;
-  
 }
 .container{
     margin: 0 auto;
@@ -65,10 +50,10 @@ a {
 }
 #box1 {
     background-color: rgb(255, 255, 255);
-    text-align: center;
     height: 11em;
     overflow: hidden;
     padding: 20px;
+    
  
 }
 #box1img {
@@ -83,16 +68,15 @@ a {
     margin-right:2px;
     margin-bottom: 5px;
 }
-#box1text {
-    float: right;
-    margin-left: 20%;
-    font-size: 12px;
-    padding-left: 0;
-}
+
 #provider {
     max-width: 90%;
     max-height: 90%;
     float:left;
+}
+#box1text {
+  
+    margin-right: 10%;
 }
 #box1text p {
     font-size: 12px;
@@ -115,18 +99,8 @@ a {
     padding:20px;
 }
 
-#box3text {
-    float: right;
-    margin-left: 20%;
-    font-size: 15px;
-    padding-left: 0;
-    
-}
 
-#A1title {
-    display:inline;
-    margin-right: 60%;
-}
+
 
 h3 {
     display:inline;
@@ -166,3 +140,17 @@ a {
     color: purple;
 }
 
+/*d3 styling*/
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: black ;
+  stroke-width: 1px;
+}
+
+svg {
+  border:0px solid black;
+}

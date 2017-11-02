@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3841 534 36 47">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #616161;
+      }
+
+      .cls-1 {
+        font-size: 12px;
+        font-family: SegoeUI, Segoe UI;
+      }
+    </style>
+  </defs>
+  <g id="Group_1309" data-name="Group 1309" transform="translate(2003 197)">
+    <text id="Device_Care" data-name="Device
+Care" class="cls-1" transform="translate(1856 369)"><tspan x="-17.581" y="0">Device</tspan><tspan x="-11.991" y="12">Care</tspan></text>
+    <path id="devices" class="cls-2" d="M22,17H18V10h4m1-2H17a1,1,0,0,0-1,1V19a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V9a1,1,0,0,0-1-1M4,6H22V4H4A2,2,0,0,0,2,6V17H0v3H14V17H4Z" transform="translate(1843 333)"/>
+  </g>
+</svg>
