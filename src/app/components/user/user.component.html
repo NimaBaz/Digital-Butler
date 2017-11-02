@@ -56,8 +56,8 @@
                     </div>
                 </div>
 
+                <!-- Wifi & Local Network Care Box -->
                 <div  class="col-lg-3 col-md-3">
-                    <!-- Wifi & Local Network Care Box -->
                     <div id="A2">
                         <span > 
                             <div class="col-lg-8 text-nowrap">
@@ -76,65 +76,65 @@
                 </div>
 
                 <!-- A3 -->
-                    <div class="col-lg-5 col-md-6">
-                        <div id="A3">
-                            <span >
-                                <div class="col-lg-8 text-nowrap">
-                                    <h3>Device Care</h3>
+                <div class="col-lg-5 col-md-6">
+                    <div id="A3">
+                        <span >
+                            <div class="col-lg-8 text-nowrap">
+                                <h3>Device Care</h3>
+                            </div>
+                            <div class="col-lg-4">
+                                <i (click)="minimize('box3')" class="glyphicon glyphicon-chevron-down"></i>
+                                <button (click)="remove($event)">X</button>
+                            </div>
+                        </span>
+                                
+                        <div id="box3">
+                            <ul class="text-left" id="box3text"> 
+                                <div class="col-lg-4">
+                                    <li><a href="#">Devices on 2.4GHZ</a>
+                                        <p> <strong>5</strong></p>
+                                    </li>   
                                 </div>
                                 <div class="col-lg-4">
-                                    <i (click)="minimize('box3')" class="glyphicon glyphicon-chevron-down"></i>
-                                    <button (click)="remove($event)">X</button>
+                                    <li><a href="#">Guest Devices</a>
+                                        <p> <strong>1</strong></p> 
+                                        </li>
                                 </div>
-                            </span>
-                                
-                            <div id="box3">
-                                <ul class="text-left" id="box3text"> 
-                                    <div class="col-lg-4">
-                                        <li><a href="#">Devices on 2.4GHZ</a>
-                                            <p> <strong>5</strong></p>
-                                        </li>   
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <li><a href="#">Guest Devices</a>
-                                            <p> <strong>1</strong></p> 
-                                            </li>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <li><a href="#">Bandwitdh Hogs</a>
-                                            <p> <strong>0</strong></p>   
-                                            </li>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <li><a href="#">Devices on 5GHZ</a>
-                                            <p> <strong>3</strong></p>  
-                                        </li>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <li><a href="#">Wired Devices</a>
-                                            <p> <strong>2</strong></p>
-                                            </li>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <li><a href="#">Offline devices Hogs</a>
-                                            <p> <strong>3</strong></p> 
-                                        </li>
-                                    </div>
-                                </ul>
-                            </div>
+                                <div class="col-lg-4">
+                                    <li><a href="#">Bandwitdh Hogs</a>
+                                        <p> <strong>0</strong></p>   
+                                    </li>
+                                </div>
+                                <div class="col-lg-4">
+                                    <li><a href="#">Devices on 5GHZ</a>
+                                        <p> <strong>3</strong></p>  
+                                    </li>
+                                </div>
+                                <div class="col-lg-4">
+                                    <li><a href="#">Wired Devices</a>
+                                        <p> <strong>2</strong></p>
+                                    </li>
+                                </div>
+                                <div class="col-lg-4">
+                                    <li><a href="#">Offline devices Hogs</a>
+                                        <p> <strong>3</strong></p> 
+                                    </li>
+                                </div>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <!-- B -->
+                <!-- B -->
                 <div class="col-lg-8 col-md-8">
                     <div id="B">
                         <span  > 
                             <ul>
                                 <div class="col-lg-2">
-                                    <li><a href="#">NETWORK DEVICES</a></li>
+                                    <a href="#">NETWORK DEVICES</a>
                                 </div>
                                 <div class="col-lg-2">
-                                    <li><a href="#">Internet UP/DOWN</a></li>
+                                    <button type="button" class="btn btn-secondary" (click)="changeDivContent()">Internet UP/DOWN</button>
                                 </div>
                                             
                                 <div class="col-lg-2">
@@ -170,7 +170,7 @@
                                     </pattern>
                                 </defs>
                             </svg>    
-                        </div>                   
+                        </div>                 
                     </div>
                 </div>
 

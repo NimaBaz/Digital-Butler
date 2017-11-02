@@ -27,8 +27,7 @@ export class UserComponent implements OnInit {
 
         var svg = d3.select("svg"),
         width = +svg.attr("width"),
-        height = +svg.attr("height");
-        
+        height = +svg.attr("height");       
 
 
         var nodes_data =  [
@@ -214,5 +213,9 @@ export class UserComponent implements OnInit {
     minimize3(id_) {
             var div_to_toggle = '#' + id_ ;
             $(div_to_toggle).slideToggle();
+    }
+
+    changeDivContent(){
+        document.getElementById("box4").innerHTML = "stuff";
     }
 }
