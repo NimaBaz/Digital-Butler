@@ -27,7 +27,9 @@ export class UserComponent implements OnInit {
 
         var svg = d3.select("svg"),
         width = +svg.attr("width"),
-        height = +svg.attr("height");       
+        height = +svg.attr("height");  
+        
+        document.getElementById("defaultOpen").click();
 
 
         var nodes_data =  [
@@ -198,7 +200,21 @@ export class UserComponent implements OnInit {
                 .attr("y1", function(d) { return d.source.y; })
                 .attr("x2", function(d) { return d.target.x; })
                 .attr("y2", function(d) { return d.target.y; });
-        }     
+        }  
+    }
+
+    openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
     }
 
     minimize(id_) { 
@@ -216,6 +232,6 @@ export class UserComponent implements OnInit {
     }
 
     changeDivContent(){
-        document.getElementById("box4").innerHTML = "stuff";
+        document.getElementById("B2").innerHTML = "stuff";
     }
 }
