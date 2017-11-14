@@ -10,13 +10,13 @@
 
                 <!-- A1 -->
                 <div class="col-lg-3 col-md-3">
-                    <!-- Internet Care Box-->
+                    <!-- Internet Care Box Title Span-->
                     <div id="A1">
                         <span> 
-                            <div class="col-lg-8 text-nowrap">
+                            <div class="col-md-8 text-nowrap">
                                 <h3>Internet Care</h3>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-md-4">
                                 <i (click)="minimize('box1')" class="glyphicon glyphicon-chevron-down"></i>
                                 <button (click)="remove($event)">X</button>
                             </div>
@@ -59,6 +59,7 @@
                 <!-- Wifi & Local Network Care Box -->
                 <div  class="col-lg-3 col-md-3">
                     <div id="A2">
+                        <!-- Wifi&Local Network Care Span-->
                         <span > 
                             <div class="col-lg-8 text-nowrap">
                                 <h3>Wifi&Local Network Care</h3>
@@ -90,7 +91,8 @@
                 <!-- A3 -->
                 <div class="col-lg-5 col-md-6">
                     <div id="A3">
-                        <span >
+                        <span>
+                            <!-- Device Care Title Span-->
                             <div class="col-lg-8 text-nowrap">
                                 <h3>Device Care</h3>
                             </div>
@@ -138,32 +140,31 @@
                 </div>
 
                 <!-- B -->
-                <div class="col-lg-8 col-md-8">
+                <div class="col-lg-9 col-md-6">
                     <div id="B">
-                        <span> 
-                            <!-- 
-                            <i (click)="minimize('box4')" class="glyphicon glyphicon-chevron-down"></i>
-                            <button (click)="remove($event)">X</button>
-                             <i (click)="minimize2($event)" class="glyphicon glyphicon-chevron-down"></i>
-                            <button (click)="remove($event)">X</button> -->
+                        <!-- B Box Title/Tab Span-->
+                        <span>    
+                            <button class="offset-xs-11 col-xs-1" (click)="remove($event)">X</button>
                             <div class="tab">
-                                
-                                <button class="tablinks" (click)="openTab(event, 'NETWORK DEVICES')" id="defaultOpen">NETWORK DEVICES</button>
-                                
-                                <button class="tablinks" (click)="openTab(event, 'INTERNET UP/DOWN')">INTERNET UP/DOWN</button>
-
-                                <button class="tablinks" (click)="openTab(event, 'AVAILABLE UP/DOWN BANDWIDTH')">AVAILABLE UP/DOWN BANDWIDTH</button>
-                                    
-                                <button class="tablinks" (click)="openTab(event, 'WAN TX/RX PACKETS')">WAN TX/RX PACKETS</button>
-
-                                <button class="tablinks" (click)="openTab(event, 'WIFI NEIGHBOR LIST')">WIFI NEIGHBOR LIST</button>
-
-                                <button class="tablinks" (click)="openTab(event, 'NEIGHBOR WIFI INTERFERENCE')">NEIGHBOR WIFI INTERFERENCE</button>
-
-                                <button (click)="changeDivContent()">changeDivContent Example</button>
+                                <div class="col-md-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'NETWORK DEVICES')" id="defaultOpen">NETWORK DEVICES</button>    
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'INTERNET UP/DOWN')">INTERNET UP/DOWN</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'AVAILABLE UP/DOWN BANDWIDTH')">AVAILABLE UP/DOWN BANDWIDTH</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'WAN TX/RX PACKETS')">WAN TX/RX PACKETS</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'WIFI NEIGHBOR LIST')">WIFI NEIGHBOR LIST</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'NEIGHBOR WIFI INTERFERENCE')">NEIGHBOR WIFI INTERFERENCE</button>
+                                </div>
                             </div>
-
-                          
                         </span> 
 
                         <div id="NETWORK DEVICES" class="tabcontent">
@@ -189,15 +190,15 @@
                 </div>
 
                 <!-- B2 -->
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-2 col-md-4">
                     <div id="B2">
                         <span > 
                             <i (click)="minimize($event)" class="glyphicon glyphicon-chevron-down"></i>
                             <button (click)="remove($event)">X</button>
                         </span>
-                                
                         <div id="box5">
                             <a href="#" class="btn btn-lg btn-primary">B2</a>
+                            <button (click)="changeDivContent()">changeDivContent Example</button>
                         </div>     
                     </div>
                 </div>
