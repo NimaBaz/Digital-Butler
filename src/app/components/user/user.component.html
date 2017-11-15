@@ -105,12 +105,21 @@
                         <div id="box3">
                             <ul class="text-left" id="box3text"> 
                                 <div class="col-lg-4">
-                                    <li><a href="#">Devices on 2.4GHZ</a>
+                                    <li>
+                                        <a href="#" (click)="myFunction2('myModal')">Devices on 2.4GHZ</a>
+                                        <div id="myModal" class="modal">
+                                            <div class="modal-content">
+                                            <span class="close" (click)="closeFunct('myModal')">&times;</span>
+                                            <p>Some text in the Modal..</p>
+                                        </div>
+                                        </div>>
                                         <p> <strong>5</strong></p>
                                     </li>   
                                 </div>
                                 <div class="col-lg-4">
-                                    <li><a href="#">Guest Devices</a>
+                                    <li><a href="#" class="popup" (click)="myFunction('PopupGDO')">Guest Devices
+                                        <div class="popuptext" id="PopupGDO">A Simple Popup!</div>
+                                    </a>
                                         <p> <strong>1</strong></p> 
                                         </li>
                                 </div>
@@ -125,7 +134,9 @@
                                     </li>
                                 </div>
                                 <div class="col-lg-4">
-                                    <li><a href="#">Wired Devices</a>
+                                    <li><a href="#" class="popup" (click)="myFunction('PopupWD')">Wired Devices
+                                        <div class="popuptext" id="PopupWD">A Simple Popup!</div>
+                                        </a>
                                         <p> <strong>2</strong></p>
                                     </li>
                                 </div>

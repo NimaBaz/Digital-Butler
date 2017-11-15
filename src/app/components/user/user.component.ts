@@ -234,4 +234,22 @@ export class UserComponent implements OnInit {
     changeDivContent(){
         document.getElementById("B2").innerHTML = "stuff";
     }
+
+    /*stuff for pop ups*/
+    myFunction(some_eventID) {
+        var popup = document.getElementById(some_eventID);
+        popup.classList.toggle("show");
+    
+    }
+    
+    // Get the modal
+    myFunction2(some_eventID) {
+    var modal = document.getElementById(some_eventID);
+            modal.style.display = "block";
+    }
+    closeFunct(some_eventID){
+      var modal = document.getElementById(some_eventID);
+      modal.style.display = "none";
+    }
+
 }
