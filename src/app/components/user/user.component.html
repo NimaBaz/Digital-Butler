@@ -7,23 +7,22 @@
         <!-- gray div -->
         <div class="jumbotron">
             <div class="row top-buffer">
-
                 <!-- A1 -->
                 <div class="col-lg-3 col-md-3">
                     <!-- Internet Care Box Title Span-->
-                    <div id="A1">
-                        <span> 
-                            <div class="col-md-8 text-nowrap">
+                    <div id="topRow">
+                        <div> 
+                            <div class="col-md-8 text-nowrap" id="scaleTitle">
                                 <h3>Internet Care</h3>
                             </div>
                             <div class="col-md-4">
                                 <i (click)="minimize('box1')" class="glyphicon glyphicon-chevron-down"></i>
                                 <button (click)="remove($event)">X</button>
                             </div>
-                        </span>
+                        </div>
 
                         <!-- Internet Care Box-->
-                        <div id="box1">
+                        <div>
                             <ul class="text-nowrap" id="box1text">      
                                 <div class="col-lg-4">
                                     <a href="#">FAQ</a>  
@@ -58,19 +57,19 @@
 
                 <!-- Wifi & Local Network Care Box -->
                 <div  class="col-lg-3 col-md-3">
-                    <div id="A2">
+                    <div id="topRow">
                         <!-- Wifi&Local Network Care Span-->
-                        <span > 
-                            <div class="col-lg-8 text-nowrap">
+                        <div> 
+                            <div class="col-lg-8 text-nowrap" id="scaleTitle">
                                 <h3>Wifi&Local Network Care</h3>
                             </div>
                             <div class="col-lg-4">
                                 <i (click)="minimize('box2')" class="glyphicon glyphicon-chevron-down"></i>
                                 <button (click)="remove($event)">X</button>
                             </div>      
-                        </span>
+                        </div>
 
-                        <div id="box2">
+                        <div>
                                 <ul class="text-left" id="box3text"> 
                                         <div class="col-lg-4">
                                             <li><a href="#">Neighbors on Home Channel</a>
@@ -90,19 +89,19 @@
 
                 <!-- A3 -->
                 <div class="col-lg-5 col-md-6">
-                    <div id="A3">
-                        <span>
+                    <div id="topRow">
+                        <div>
                             <!-- Device Care Title Span-->
-                            <div class="col-lg-8 text-nowrap">
+                            <div class="col-lg-8 text-nowrap" id="scaleTitle">
                                 <h3>Device Care</h3>
                             </div>
                             <div class="col-lg-4">
                                 <i (click)="minimize('box3')" class="glyphicon glyphicon-chevron-down"></i>
                                 <button (click)="remove($event)">X</button>
                             </div>
-                        </span>
+                        </div>
                                 
-                        <div id="box3">
+                        <div>
                             <ul class="text-left" id="box3text"> 
                                 <div class="col-lg-4">
                                     <li>
@@ -112,7 +111,7 @@
                                             <span class="close" (click)="closeFunct('myModal')">&times;</span>
                                             <p>Some text in the Modal..</p>
                                         </div>
-                                        </div>>
+                                        </div>
                                         <p> <strong>5</strong></p>
                                     </li>   
                                 </div>
@@ -152,31 +151,41 @@
 
                 <!-- B -->
                 <div class="col-lg-9 col-md-6">
-                    <div id="B">
+                    <div id="dataBox">
                         <!-- B Box Title/Tab Span-->
-                        <span>    
-                            <button class="offset-xs-11 col-xs-1" (click)="remove($event)">X</button>
-                            <div class="tab">
-                                <div class="col-md-2">
-                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'NETWORK DEVICES')" id="defaultOpen">NETWORK DEVICES</button>    
+                            <div class="tab" id="dataTabs">
+                                <div id="scaleText">
+                                    <button class="tablinks" (click)="openTab(event, 'NETWORK DEVICES')" id="defaultOpen">
+                                        <p>NETWORK DEVICES</p>
+                                    </button>    
                                 </div>
-                                <div class="col-sm-2">
-                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'INTERNET UP/DOWN')">INTERNET UP/DOWN</button>
+                                <div id="scaleText">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'INTERNET UP/DOWN')">
+                                        <p>INTERNET UP/DOWN</p>
+                                    </button>
                                 </div>
-                                <div class="col-sm-2">
-                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'AVAILABLE UP/DOWN BANDWIDTH')">AVAILABLE UP/DOWN BANDWIDTH</button>
+                                <div id="scaleText">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'AVAILABLE UP/DOWN BANDWIDTH')">
+                                        <p>AVAILABLE UP/DOWN BANDWIDTH</p>
+                                    </button>
                                 </div>
-                                <div class="col-sm-2">
-                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'WAN TX/RX PACKETS')">WAN TX/RX PACKETS</button>
+                                <div id="scaleText">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'WAN TX/RX PACKETS')">
+                                        <p>WAN TX/RX PACKETS</p>
+                                    </button>
                                 </div>
-                                <div class="col-sm-2">
-                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'WIFI NEIGHBOR LIST')">WIFI NEIGHBOR LIST</button>
+                                <div id="scaleText">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'WIFI NEIGHBOR LIST')">
+                                        <p>WIFI NEIGHBOR LIST</p>
+                                    </button>
                                 </div>
-                                <div class="col-sm-2">
-                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'NEIGHBOR WIFI INTERFERENCE')">NEIGHBOR WIFI INTERFERENCE</button>
+                                <div id="scaleText">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'NEIGHBOR WIFI INTERFERENCE')">
+                                        <p>NEIGHBOR WIFI INTERFERENCE</p>
+                                    </button>
                                 </div>
                             </div>
-                        </span> 
+                        
 
                         <div id="NETWORK DEVICES" class="tabcontent">
                             <svg width="1100" height="570">            
