@@ -1,0 +1,15 @@
+.nodes circle {
+    stroke: red	;
+    stroke-width: 0px;
+    color: red;
+}
+/*
+.nodes circle {
+  stroke: black ;
+  stroke-width: 1px;
+}
+*/
+
+svg {
+  border:0px solid black;
+}
