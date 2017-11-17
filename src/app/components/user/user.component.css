@@ -3,8 +3,25 @@
 /* .row {
     text-align: center;
 } */
-body{
-    padding:0;
+
+a {
+    position:relative;
+    color:gray;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#toolbar a{
+    padding: 0px;
+    margin:0px;
+}
+.box1img {
+    max-width: 40%;
+    max-height: 40%;
+    margin-right:2px;
+   
+}
+#box1text p {
+    font-size: 12px;
 }
 div .header {
     float:right;
@@ -26,6 +43,10 @@ p {
 .container{
     margin: 0 auto;
     padding: 0;
+    width: 96%;
+    float:left;
+}
+.jumbotron {
     width: 100%;
 }
 /* span {
@@ -48,32 +69,20 @@ button {
     overflow: hidden;
     outline:none;
 }
-a {
-    position:relative;
-    color:gray;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 i {
     font-size: 1.5em;
     margin-right:5px;
     color: gray;
 }
-.toolbarimg {
-    max-width: 30%;
-    max-height: 30%;
-}
-.topRow {
-    background-color: white;
-    padding: 0 10px 10px 10px;
-    height: 12em;
-    margin-bottom: 10px;
-    overflow: hidden;
-}
+
 .row-header{
     padding-top:5px;
 }
-
+#refresh{
+    margin-top:45px;
+    margin-bottom:5px;
+}
 .scaleText p {
     font-size: 0.8vw;
 }
@@ -82,18 +91,33 @@ i {
     display:inline;
     margin-right: 79%;
 }
-.box1img {
-    max-width: 40%;
-    max-height: 40%;
-    margin-right:2px;
-   
+.toolbarimg {
+    width: 60%;
+    height: 60%;
+    
+    margin: 0;
 }
+#toolbar a {
+    display: block;
+    text-align: center;
+    padding:0px 2px 0px 2px;
+ 
+  
+}
+.topRow {
+    background-color: white;
+    padding: 0 10px 10px 10px;
+    height: 12em;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
 h4 {
 
     padding: 0px;
     margin: 0px;
-    font-size: 40px;
-    line-height: 90%;
+    font-size: 35px;
+    line-height: 100%;
 }
 #box1imgdown {
     max-width: 20%;
@@ -118,9 +142,7 @@ h4 {
   
     margin-right: 10%;
 } */
-#box1text p {
-    font-size: 12px;
-}
+
 .padding-right {
     padding-right: 20%;
 }
@@ -142,20 +164,22 @@ ul li {
 #box5 {
     background-color: rgb(255, 255, 255);
  
-    height: 58em;
+    height: 50em;
     padding: 20px;
     border: 15px lightgray;
 
 }
 #dataBox {
     background-color: white;
+    height: 50em;
 }
-#E {
-    background-color: gray;
+#toolbar {
+    background-color: white;
+    float:right;
     
-    height: 55em;
-    width: 5%;
-    cursor: move;
+    width: 3%;
+    margin-top:5%;
+    margin-right: 15px;
 }
 
 a {

@@ -46,11 +46,13 @@ export class UserComponent implements OnInit {
             $("#" + id_).slideToggle();
     }
 
-    remove(event) { 
-            this.id = event.target.parentElement.parentElement.getAttribute("id");
-            $("#"+ this.id).hide();
+    remove(id_) { 
+            
+            $("#" + id_).hide();
     }
-
+    showDiv(id_) {
+        $("#" + id_).show();
+    }
     minimize3(id_) {
             var div_to_toggle = '#' + id_ ;
             $(div_to_toggle).slideToggle();

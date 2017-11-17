@@ -1,5 +1,5 @@
 
-<body>
+
     <div class="container">
         <!-- gray div -->
         <div class="jumbotron">
@@ -7,13 +7,14 @@
                 <!-- A1 -->
                 <div class="col-lg-4 col-md-4">
                     <!-- Internet Care Box Title Span-->
-                    <div class="topRow ">
+                    <div></div>
+                    <div class="topRow" id="intcare">
                         <div class="row row-header"> 
                             <div class="col-md-8 text-nowrap" id="scaleTitle">
                                 <h3>Internet Care</h3>
                             </div>
                             <div class="col-md-4">
-                                <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove($event)"></i></a>
+                                <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove('intcare')"></i></a>
                                 <a href="#"><i (click)="minimize('box1')" class="glyphicon glyphicon-chevron-down"></i></a>
                             </div>
                         </div>
@@ -58,7 +59,8 @@
 
                 <!-- Wifi & Local Network Care Box -->
                 <div  class="col-lg-3 col-md-3">
-                    <div class="topRow">
+                    <span></span>
+                    <div class="topRow" id="wificare">
                         <!-- Wifi&Local Network Care Span-->
                         <div class="row row-header"> 
                             <div class="col-lg-8 text-nowrap" id="scaleTitle">
@@ -66,7 +68,7 @@
                             </div>
                             <div class="col-lg-4 ">
                                     <!-- (click)="minimize('box2')" -->
-                                <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove($event)"></i></a>
+                                <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove('wificare')"></i></a>
                                 <a href="#"><i class="glyphicon glyphicon-chevron-down box-header"></i> </a>
                             </div>      
                         </div>
@@ -94,14 +96,15 @@
 
                 <!-- A3 -->
                 <div class="col-lg-5 col-md-6">
-                    <div class="topRow">
+                    <span></span>
+                    <div class="topRow" id="devicecare">
                         <div class="row row-header">
                             <!-- Device Care Title Span-->
                             <div class="col-lg-8 text-nowrap" id="scaleTitle">
                                 <h3>Device Care</h3>
                             </div>
                             <div class="col-lg-4">
-                                <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove($event)"></i></a>
+                                <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove('devicecare')"></i></a>
                                 <a href="#"><i (click)="minimize('box3')" class="glyphicon glyphicon-chevron-down"></i></a>
                             </div>
                         </div>
@@ -199,7 +202,7 @@
                                 </div>
                                 <div class="scaleText">
                                     <p>
-                                    <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove($event)"></i></a>
+                                    <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove('dataBox')"></i></a>
                                     <a href="#"><i (click)="minimize('box3')" class="glyphicon glyphicon-chevron-down"></i></a></p>
                                 </div>
                                
@@ -224,9 +227,10 @@
 
                 <!-- B2 -->
                 <div class="col-lg-2 col-md-4">
-                    <div id="B2">
+                    <span></span>
+                    <div id="promos">
                         <span > 
-                            <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove($event)"></i></a>
+                            <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove('promos')"></i></a>
                             <a href="#"><i (click)="minimize('box1')" class="glyphicon glyphicon-chevron-down"></i></a>
                         </span>
                         <div id="box5">
@@ -238,22 +242,27 @@
 
                 <!-- E -->
                 
-                    <div id="E">
-                        <h1>TOOLBAR</h1>
-                        <!-- <ul>
-                            <li><a href="#"> <img class="toolbarimg" src="../assets/refresh.svg"></a> </li>
-                            <li><a href="#"> <img class="toolbarimg" src="../assets/internet.svg"></a> </li>
-                            <li><a href="#"> <img class="toolbarimg" src="../assets/Rectangle 193.svg"></a> </li>
-                            <li><a href="#"> <img class="toolbarimg" src="../assets/InternetCare.svg"></a></li>
-                            <li><a href="#"> <img class="toolbarimg" src="../assets/Line 113.svg"></a> </li>
-                            <li><a href="#"> <img class="toolbarimg" src="../assets/WiFiCare.svg"></a> </li>
-                            <li><a href="#"> <img class="toolbarimg" src="../assets/Line 54.svg"></a></li>
-                        </ul> -->
-                        <!-- <a href="#" class="btn btn-sm btn-primary">E</a> -->
-                        <!-- <button (click)="remove($event)">X</button> -->
-                    </div>
                 
             </div>
         </div>     
     </div>
-</body>
+    
+    <div id="toolbar">
+        
+                
+                    <a href="/" ><img class="toolbarimg" id="refresh" src="../assets/refresh.svg"></a>
+                    <a href="#" (click)="showDiv('intcare')"><img class="toolbarimg" src="../assets/internet.svg"><img class="toolbarimg" src="../assets/InternetCare.svg"></a>
+                   
+                    <a><img class="toolbarimg" src="../assets/Line 113.svg"></a>
+                    <a href="#" (click)="showDiv('wificare')"><img class="toolbarimg" src="../assets/WiFiCare.svg"></a> 
+                    <a href="#"><img class="toolbarimg" src="../assets/Line 54.svg"></a>
+                    <a href="#" (click)="showDiv('devicecare')"><p>Device Care</p></a> 
+                    <a href="#"><img class="toolbarimg" src="../assets/Line 54.svg"></a>
+                    <a href="#" (click)="showDiv('dataBox')"><p>Network</p></a> 
+                    <a href="#"><img class="toolbarimg" src="../assets/Line 54.svg"></a>
+                    <a href="#" (click)="showDiv('promos')"><p>Promos</p></a> 
+                    <a href="#"><img class="toolbarimg" src="../assets/Line 54.svg"></a>
+                <!-- <a href="#" class="btn btn-sm btn-primary">E</a> -->
+                <!-- <button (click)="remove($event)">X</button> -->
+            </div>
+
