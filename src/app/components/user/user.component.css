@@ -305,12 +305,14 @@ div.tab button.active {
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
+    
+    bottom: -280%;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -210px;
+ 
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: #eee transparent transparent transparent;
 }
 
 .popuptext:hover,
@@ -318,19 +320,21 @@ div.tab button.active {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-    background-color: #555;
+    background-color: #eee;
 }
 
 /* Popup arrow */
 .popup .popuptext::after {
     content: "";
     position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
+    top: 40%;
+    left: 100%;
+    -webkit-transform: rotate(-90deg); /* Safari */
+    transform: rotate(-90deg);
+    margin-left: 5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: #eee transparent transparent transparent;
 }
 
 /* Toggle this class - hide and show the popup */
