@@ -35,8 +35,12 @@ git push
 To create a new project after set-up:
 (This method creates all of the files that an angular project has)
 
+npm install -g @angular/cli
+
 ng new 'projectName'
 
 cd 'projectName'
 
 ng serve
+
+*****************************************************
