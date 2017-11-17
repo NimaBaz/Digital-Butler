@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+    <div class="container">
+        <!-- gray div -->
+        <div class="jumbotron">
+            <div class="row top-buffer">
+
+                <!-- A1 -->
+                <div class="col-lg-3 col-md-3">
+                    <!-- Internet Care Box Title Span-->
+                    <div id="A1">
+                        <span> 
+                            <div class="col-md-8 text-nowrap">
+                                <h3>Internet Care</h3>
+                            </div>
+                            <div class="col-md-4">
+                                <i (click)="minimize('box1')" class="glyphicon glyphicon-chevron-down"></i>
+                                <button (click)="remove($event)">X</button>
+                            </div>
+                        </span>
+
+                        <!-- Internet Care Box-->
+                        <div id="box1">
+                            <ul class="text-nowrap" id="box1text">      
+                                <div class="col-lg-4">
+                                    <a href="#">FAQ</a>  
+                                </div>           
+                                <div class="col-lg-4 padding-right">   
+                                    <li>
+                                        <a href="#"> <img id="ipimg" src="../assets/ip.png">Ip Address</a>
+                                        <p>192.168.2.11</p>
+                                    </li>   
+                                </div>
+                                <div class="col-lg-4">
+                                    <li><a href="#"> <img id="box1img" src="../assets/up.png">Up Speed</a>
+                                        <p> 2.15 Mbps</p> 
+                                </div>
+                                <div class="col-lg-4">
+                                    <img id="provider" src="../assets/ATT.png">  
+                                </div>
+                                <div class="col-lg-4">  
+                                    <li><a href="#"> <img id="box1img" src="../assets/dns.png">DNS Status</a>
+                                        <p>UP</p>
+                                    </li>   
+                                </div>
+                                <div class="col-lg-4">
+                                    <li><a href="#"> <img id="box1img" src="../assets/down.png">Down Speed</a>
+                                        <p> 9.37 MBps</p> 
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wifi & Local Network Care Box -->
+                <div  class="col-lg-3 col-md-3">
+                    <div id="A2">
+                        <!-- Wifi&Local Network Care Span-->
+                        <span > 
+                            <div class="col-lg-8 text-nowrap">
+                                <h3>Wifi&Local Network Care</h3>
+                            </div>
+                            <div class="col-lg-4">
+                                <i (click)="minimize('box2')" class="glyphicon glyphicon-chevron-down"></i>
+                                <button (click)="remove($event)">X</button>
+                            </div>      
+                        </span>
+
+                        <div id="box2">
+                                <ul class="text-left" id="box3text"> 
+                                        <div class="col-lg-4">
+                                            <li><a href="#">Neighbors on Home Channel</a>
+                                                <p> <strong>5</strong></p>
+                                            </li>   
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <li><a href="#">Poor Links</a>
+                                                <p> <strong>2</strong></p> 
+                                                </li>
+                                        </div>
+                                    
+                                    </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A3 -->
+                <div class="col-lg-5 col-md-6">
+                    <div id="A3">
+                        <span>
+                            <!-- Device Care Title Span-->
+                            <div class="col-lg-8 text-nowrap">
+                                <h3>Device Care</h3>
+                            </div>
+                            <div class="col-lg-4">
+                                <i (click)="minimize('box3')" class="glyphicon glyphicon-chevron-down"></i>
+                                <button (click)="remove($event)">X</button>
+                            </div>
+                        </span>
+                                
+                        <div id="box3">
+                            <ul class="text-left" id="box3text"> 
+                                <div class="col-lg-4">
+                                    <li><a href="#">Devices on 2.4GHZ</a>
+                                        <p> <strong>5</strong></p>
+                                    </li>   
+                                </div>
+                                <div class="col-lg-4">
+                                    <li><a href="#">Guest Devices</a>
+                                        <p> <strong>1</strong></p> 
+                                        </li>
+                                </div>
+                                <div class="col-lg-4">
+                                    <li><a href="#">Bandwitdh Hogs</a>
+                                        <p> <strong>0</strong></p>   
+                                    </li>
+                                </div>
+                                <div class="col-lg-4">
+                                    <li><a href="#">Devices on 5GHZ</a>
+                                        <p> <strong>3</strong></p>  
+                                    </li>
+                                </div>
+                                <div class="col-lg-4">
+                                    <li><a href="#">Wired Devices</a>
+                                        <p> <strong>2</strong></p>
+                                    </li>
+                                </div>
+                                <div class="col-lg-4">
+                                    <li><a href="#">Offline devices Hogs</a>
+                                        <p> <strong>3</strong></p> 
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B -->
+                <div class="col-lg-9 col-md-6">
+                    <div id="B">
+                        <!-- B Box Title/Tab Span-->
+                        <span>    
+                            <button class="offset-xs-11 col-xs-1" (click)="remove($event)">X</button>
+                            <div class="tab">
+                                <div class="col-md-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'NETWORK DEVICES')" id="defaultOpen">NETWORK DEVICES</button>    
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'INTERNET UP/DOWN')">INTERNET UP/DOWN</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'AVAILABLE UP/DOWN BANDWIDTH')">AVAILABLE UP/DOWN BANDWIDTH</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'WAN TX/RX PACKETS')">WAN TX/RX PACKETS</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'WIFI NEIGHBOR LIST')">WIFI NEIGHBOR LIST</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="tablinks text-nowrap" (click)="openTab(event, 'NEIGHBOR WIFI INTERFERENCE')">NEIGHBOR WIFI INTERFERENCE</button>
+                                </div>
+                            </div>
+                        </span> 
+
+                        <div id="NETWORK DEVICES" class="tabcontent">
+                            <svg width="1200" height="800">            
+                                <defs>
+                                    <pattern id="image" x="0" y="0" patternUnits="userSpaceOnUse" height="1" width="1">
+                                        <image x="0" y="0" xlink:href="url.png"></image>
+                                    </pattern>
+                                </defs>
+                            </svg>    
+                        </div>   
+
+                        <!-- -->
+                        <div id="INTERNET UP/DOWN" class="tabcontent">
+                            <h3></h3>
+                            <h4></h4>
+                            <h5></h5>
+                            <p>I made Tabs lol</p>
+                        </div> 
+                        <!-- --> 
+
+                    </div>
+                </div>
+
+                <!-- B2 -->
+                <div class="col-lg-2 col-md-4">
+                    <div id="B2">
+                        <span > 
+                            <i (click)="minimize($event)" class="glyphicon glyphicon-chevron-down"></i>
+                            <button (click)="remove($event)">X</button>
+                        </span>
+                        <div id="box5">
+                            <a href="#" class="btn btn-lg btn-primary">B2</a>
+                            <button (click)="changeDivContent()">changeDivContent Example</button>
+                        </div>     
+                    </div>
+                </div>
+
+                <!-- E -->
+                <div class="col-lg-1 col-sm-1">
+                    <div id="E">
+                        <a href="#"> <img id="ipimg" src="../assets/refresh.svg"></a>
+                        <a href="#"> <img id="ipimg" src="../assets/internet.svg"></a>
+                        <a href="#"> <img id="ipimg" src="../assets/Rectangle 193.svg"></a>
+                        <a href="#"> <img id="ipimg" src="../assets/InternetCare.svg"></a>
+                        <a href="#"> <img id="ipimg" src="../assets/Line 113.svg"></a>
+                        <a href="#"> <img id="ipimg" src="../assets/WiFiCare.svg"></a>
+                        <a href="#"> <img id="ipimg" src="../assets/Line 54.svg"></a>
+
+                        <!-- <a href="#" class="btn btn-sm btn-primary">E</a> -->
+                        <!-- <button (click)="remove($event)">X</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </div>
+</body>
+</html>

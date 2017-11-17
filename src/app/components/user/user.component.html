@@ -1,189 +1,208 @@
-<!doctype html>
-<html>
-<head>
-</head>
+
 <body>
     <div class="container">
         <!-- gray div -->
         <div class="jumbotron">
             <div class="row top-buffer">
                 <!-- A1 -->
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-4 col-md-4">
                     <!-- Internet Care Box Title Span-->
-                    <div id="topRow">
-                        <div> 
+                    <div class="topRow ">
+                        <div class="row row-header"> 
                             <div class="col-md-8 text-nowrap" id="scaleTitle">
                                 <h3>Internet Care</h3>
                             </div>
                             <div class="col-md-4">
-                                <i (click)="minimize('box1')" class="glyphicon glyphicon-chevron-down"></i>
-                                <button (click)="remove($event)">X</button>
+                                <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove($event)"></i></a>
+                                <a href="#"><i (click)="minimize('box1')" class="glyphicon glyphicon-chevron-down"></i></a>
                             </div>
                         </div>
 
                         <!-- Internet Care Box-->
-                        <div>
-                            <ul class="text-nowrap" id="box1text">      
-                                <div class="col-lg-4">
-                                    <a href="#">FAQ</a>  
-                                </div>           
-                                <div class="col-lg-4 padding-right">   
-                                    <li>
-                                        <a href="#"> <img id="ipimg" src="../assets/ip.png">Ip Address</a>
-                                        <p>192.168.2.11</p>
-                                    </li>   
+                      
+                            <div class="row">
+                                <div class="col-lg-4" >
+                                    <div class="col-lg-4">
+                                        <a href="#">FAQ</a>  
+                                    </div>  
+                                    <div class="col-lg-8">
+                                        <img id="provider" class="smallimg" src="../assets/ATT.png">  
+                                    </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <li><a href="#"> <img id="box1img" src="../assets/up.png">Up Speed</a>
-                                        <p> 2.15 Mbps</p> 
+                                <div class="col-lg-8 text-left">
+                                    <div class="row">
+                                        <div class="col-lg-6">                     
+                                            <a href="#"> <img class="smallimg" src="../assets/ip.png">Ip Address</a>
+                                            <p>192.168.2.11</p>   
+                                        </div>
+                                    
+                                        <div class="col-lg-6">
+                                            <a href="#"> <img class="box1img" src="../assets/up.png">Up Speed</a>
+                                            <p> 2.15 Mbps</p> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">  
+                                            <a href="#"> <img class="box1img" src="../assets/dns.png">DNS Status</a>
+                                            <p>UP</p>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#"> <img id="box1imgdown" src="../assets/down.png">Down Speed</a>
+                                            <p> 9.37 MBps</p> 
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <img id="provider" src="../assets/ATT.png">  
-                                </div>
-                                <div class="col-lg-4">  
-                                    <li><a href="#"> <img id="box1img" src="../assets/dns.png">DNS Status</a>
-                                        <p>UP</p>
-                                    </li>   
-                                </div>
-                                <div class="col-lg-4">
-                                    <li><a href="#"> <img id="box1img" src="../assets/down.png">Down Speed</a>
-                                        <p> 9.37 MBps</p> 
-                                    </li>
-                                </div>
-                            </ul>
-                        </div>
+                            </div>
                     </div>
                 </div>
 
                 <!-- Wifi & Local Network Care Box -->
                 <div  class="col-lg-3 col-md-3">
-                    <div id="topRow">
+                    <div class="topRow">
                         <!-- Wifi&Local Network Care Span-->
-                        <div> 
+                        <div class="row row-header"> 
                             <div class="col-lg-8 text-nowrap" id="scaleTitle">
                                 <h3>Wifi&Local Network Care</h3>
                             </div>
-                            <div class="col-lg-4">
-                                <i (click)="minimize('box2')" class="glyphicon glyphicon-chevron-down"></i>
-                                <button (click)="remove($event)">X</button>
+                            <div class="col-lg-4 ">
+                                    <!-- (click)="minimize('box2')" -->
+                                <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove($event)"></i></a>
+                                <a href="#"><i class="glyphicon glyphicon-chevron-down box-header"></i> </a>
                             </div>      
                         </div>
 
-                        <div>
-                                <ul class="text-left" id="box3text"> 
-                                        <div class="col-lg-4">
-                                            <li><a href="#">Neighbors on Home Channel</a>
-                                                <p> <strong>5</strong></p>
-                                            </li>   
+                        <div class="row">
+                                <div class="text-left" > 
+                                    <div class="col-lg-5">
+
+                                    </div>
+                                    <div class="col-lg-5 text-nowrap">
+                                        <div class="col-lg-12">
+                                            <a href="#">Neighbors on Home Channel</a>
+                                            <h4> <strong>5</strong></h4>
                                         </div>
-                                        <div class="col-lg-4">
-                                            <li><a href="#">Poor Links</a>
-                                                <p> <strong>2</strong></p> 
-                                                </li>
+                                        <div class="col-lg-12">
+                                            <a href="#">Poor Links</a>
+                                            <h4> <strong>2</strong></h4>   
                                         </div>
+                                    </div>
                                     
-                                    </ul>
+                                </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- A3 -->
                 <div class="col-lg-5 col-md-6">
-                    <div id="topRow">
-                        <div>
+                    <div class="topRow">
+                        <div class="row row-header">
                             <!-- Device Care Title Span-->
                             <div class="col-lg-8 text-nowrap" id="scaleTitle">
                                 <h3>Device Care</h3>
                             </div>
                             <div class="col-lg-4">
-                                <i (click)="minimize('box3')" class="glyphicon glyphicon-chevron-down"></i>
-                                <button (click)="remove($event)">X</button>
+                                <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove($event)"></i></a>
+                                <a href="#"><i (click)="minimize('box3')" class="glyphicon glyphicon-chevron-down"></i></a>
                             </div>
                         </div>
                                 
-                        <div>
-                            <ul class="text-left" id="box3text"> 
-                                <div class="col-lg-4">
-                                    <li>
+                        <div class="row">
+                            <div class="col-lg-2">
+
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="row text-left">
+                                    <div class="col-lg-4"> 
                                         <a href="#" (click)="myFunction2('myModal')">Devices on 2.4GHZ</a>
                                         <div id="myModal" class="modal">
                                             <div class="modal-content">
-                                            <span class="close" (click)="closeFunct('myModal')">&times;</span>
-                                            <p>Some text in the Modal..</p>
+                                                <span class="close" (click)="closeFunct('myModal')">&times;</span>
+                                                <p>Some text in the Modal..</p>
+                                            </div>
                                         </div>
-                                        </div>
-                                        <p> <strong>5</strong></p>
-                                    </li>   
+                                        <h4> <strong>5</strong></h4>
+                                            
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="#" class="popup" (click)="myFunction('PopupGDO')">Guest Devices
+                                            <div class="popuptext" id="PopupGDO">A Simple Popup!</div>
+                                        </a>
+                                        <h4> <strong>1</strong></h4> 
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="#">Bandwitdh Hogs</a>
+                                        <h4> <strong>0</strong></h4>    
+                                    </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <li><a href="#" class="popup" (click)="myFunction('PopupGDO')">Guest Devices
-                                        <div class="popuptext" id="PopupGDO">A Simple Popup!</div>
-                                    </a>
-                                        <p> <strong>1</strong></p> 
-                                        </li>
-                                </div>
-                                <div class="col-lg-4">
-                                    <li><a href="#">Bandwitdh Hogs</a>
-                                        <p> <strong>0</strong></p>   
-                                    </li>
-                                </div>
-                                <div class="col-lg-4">
-                                    <li><a href="#">Devices on 5GHZ</a>
-                                        <p> <strong>3</strong></p>  
-                                    </li>
-                                </div>
-                                <div class="col-lg-4">
-                                    <li><a href="#" class="popup" (click)="myFunction('PopupWD')">Wired Devices
+                                <div class="row  text-left">
+                                    <div class="col-lg-4">
+                                        <a href="#">Devices on 5GHZ</a>
+                                        <h4> <strong>3</strong></h4>  
+                                        
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="#" class="popup" (click)="myFunction('PopupWD')">Wired Devices
                                         <div class="popuptext" id="PopupWD">A Simple Popup!</div>
                                         </a>
-                                        <p> <strong>2</strong></p>
-                                    </li>
+                                        <h4> <strong>2</strong></h4>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="#">Offline devices Hogs</a>
+                                        <h4> <strong>3</strong></h4> 
+                                    </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <li><a href="#">Offline devices Hogs</a>
-                                        <p> <strong>3</strong></p> 
-                                    </li>
-                                </div>
-                            </ul>
+                            </div>
+                           
+                                
+                                
+                                
+                         
                         </div>
                     </div>
                 </div>
 
                 <!-- B -->
-                <div class="col-lg-9 col-md-6">
+                <div class="col-lg-10 col-md-6">
                     <div id="dataBox">
                         <!-- B Box Title/Tab Span-->
                             <div class="tab" id="dataTabs">
-                                <div id="scaleText">
+                                <div class="scaleText">
                                     <button class="tablinks" (click)="openTab(event, 'NETWORK DEVICES')" id="defaultOpen">
                                         <p>NETWORK DEVICES</p>
                                     </button>    
                                 </div>
-                                <div id="scaleText">
+                                <div class="scaleText">
                                     <button class="tablinks text-nowrap" (click)="openTab(event, 'INTERNET UP/DOWN')">
                                         <p>INTERNET UP/DOWN</p>
                                     </button>
                                 </div>
-                                <div id="scaleText">
+                                <div class="scaleText">
                                     <button class="tablinks text-nowrap" (click)="openTab(event, 'AVAILABLE UP/DOWN BANDWIDTH')">
                                         <p>AVAILABLE UP/DOWN BANDWIDTH</p>
                                     </button>
                                 </div>
-                                <div id="scaleText">
+                                <div class="scaleText">
                                     <button class="tablinks text-nowrap" (click)="openTab(event, 'WAN TX/RX PACKETS')">
                                         <p>WAN TX/RX PACKETS</p>
                                     </button>
                                 </div>
-                                <div id="scaleText">
+                                <div class="scaleText">
                                     <button class="tablinks text-nowrap" (click)="openTab(event, 'WIFI NEIGHBOR LIST')">
                                         <p>WIFI NEIGHBOR LIST</p>
                                     </button>
                                 </div>
-                                <div id="scaleText">
+                                <div class="scaleText">
                                     <button class="tablinks text-nowrap" (click)="openTab(event, 'NEIGHBOR WIFI INTERFERENCE')">
                                         <p>NEIGHBOR WIFI INTERFERENCE</p>
                                     </button>
                                 </div>
+                                <div class="scaleText">
+                                    <p>
+                                    <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove($event)"></i></a>
+                                    <a href="#"><i (click)="minimize('box3')" class="glyphicon glyphicon-chevron-down"></i></a></p>
+                                </div>
+                               
                             </div>
                         
 
@@ -208,8 +227,8 @@
                 <div class="col-lg-2 col-md-4">
                     <div id="B2">
                         <span > 
-                            <i (click)="minimize($event)" class="glyphicon glyphicon-chevron-down"></i>
-                            <button (click)="remove($event)">X</button>
+                            <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove($event)"></i></a>
+                            <a href="#"><i (click)="minimize('box1')" class="glyphicon glyphicon-chevron-down"></i></a>
                         </span>
                         <div id="box5">
                             <a href="#" class="btn btn-lg btn-primary">B2</a>
@@ -219,22 +238,23 @@
                 </div>
 
                 <!-- E -->
-                <div class="col-lg-1 col-sm-1">
+                
                     <div id="E">
-                        <a href="#"> <img id="ipimg" src="../assets/refresh.svg"></a>
-                        <a href="#"> <img id="ipimg" src="../assets/internet.svg"></a>
-                        <a href="#"> <img id="ipimg" src="../assets/Rectangle 193.svg"></a>
-                        <a href="#"> <img id="ipimg" src="../assets/InternetCare.svg"></a>
-                        <a href="#"> <img id="ipimg" src="../assets/Line 113.svg"></a>
-                        <a href="#"> <img id="ipimg" src="../assets/WiFiCare.svg"></a>
-                        <a href="#"> <img id="ipimg" src="../assets/Line 54.svg"></a>
-
+                        <h1>TOOLBAR</h1>
+                        <!-- <ul>
+                            <li><a href="#"> <img class="toolbarimg" src="../assets/refresh.svg"></a> </li>
+                            <li><a href="#"> <img class="toolbarimg" src="../assets/internet.svg"></a> </li>
+                            <li><a href="#"> <img class="toolbarimg" src="../assets/Rectangle 193.svg"></a> </li>
+                            <li><a href="#"> <img class="toolbarimg" src="../assets/InternetCare.svg"></a></li>
+                            <li><a href="#"> <img class="toolbarimg" src="../assets/Line 113.svg"></a> </li>
+                            <li><a href="#"> <img class="toolbarimg" src="../assets/WiFiCare.svg"></a> </li>
+                            <li><a href="#"> <img class="toolbarimg" src="../assets/Line 54.svg"></a></li>
+                        </ul> -->
                         <!-- <a href="#" class="btn btn-sm btn-primary">E</a> -->
                         <!-- <button (click)="remove($event)">X</button> -->
                     </div>
-                </div>
+                
             </div>
         </div>     
     </div>
 </body>
-</html>

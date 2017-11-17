@@ -1,40 +1,45 @@
 @charset "utf-8";
 /* CSS Document */
-.row {
+/* .row {
     text-align: center;
-}
+} */
 body{
     padding:0;
 }
-button {
-    float: right;
+div .header {
+    float:right;
 }
 
-span .glyphicon {
-    margin-right: 5px;
-    font-size:1.2em;
+div i {
+  
     
+    float:right;
+}
+div button {
+    float:right;
+}
+p {
+    font-size: 14px;
 }
 
 
-[class*="col-"] {
-    margin-bottom: 15px;
-}
 .container{
     margin: 0 auto;
     padding: 0;
     width: 100%;
 }
-span {
+/* span {
     padding-top: 5px;
     height: 30px;
     width: 100%;
     position: relative;
     text-align: right;    
-    background-color:rgb(253, 198, 95);
+    background-color:rgb(255,255,255);
     float: right;
+} */
+.col-lg-1 {
+    width: 5%;
 }
-
 button {
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -45,16 +50,31 @@ button {
 }
 a {
     position:relative;
+    color:gray;
     top: 50%;
     transform: translateY(-50%);
 }
-#topRow {
+i {
+    font-size: 1.5em;
+    margin-right:5px;
+    color: gray;
+}
+.toolbarimg {
+    max-width: 30%;
+    max-height: 30%;
+}
+.topRow {
     background-color: white;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     height: 12em;
+    margin-bottom: 10px;
     overflow: hidden;
 }
-#scaleText p {
+.row-header{
+    padding-top:5px;
+}
+
+.scaleText p {
     font-size: 0.8vw;
 }
 #scaleTitle h3 {
@@ -62,13 +82,27 @@ a {
     display:inline;
     margin-right: 79%;
 }
-#box1img {
+.box1img {
     max-width: 40%;
     max-height: 40%;
     margin-right:2px;
+   
+}
+h4 {
+
+    padding: 0px;
+    margin: 0px;
+    font-size: 40px;
+    line-height: 90%;
+}
+#box1imgdown {
+    max-width: 20%;
+    max-height: 20%;
+    margin-right:2px;
     margin-bottom: 5px;
 }
-#ipimg {
+
+.smallimg {
     max-width: 60%;
     max-height: 60%;
     margin-right:2px;
@@ -80,10 +114,10 @@ a {
     max-height: 90%;
     float:left;
 }
-#box1text {
+/* #box1text {
   
     margin-right: 10%;
-}
+} */
 #box1text p {
     font-size: 12px;
 }
@@ -117,10 +151,10 @@ ul li {
     background-color: white;
 }
 #E {
-    background-color: white;
-
+    background-color: gray;
+    
     height: 55em;
- 
+    width: 5%;
     cursor: move;
 }
 
