@@ -46,6 +46,7 @@ ng serve
 *****************************************************
 component design structure --waiting on team approval
 
+<pre>
                    +-----------+
             +------+app_nav_bar|
             |      +-----------+
@@ -62,3 +63,4 @@ component design structure --waiting on team approval
             |      +-----------+
             +------+app_toolbar|
                    +-----------+
+</pre>
