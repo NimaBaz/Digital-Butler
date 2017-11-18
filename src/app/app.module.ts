@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
 import { D3chartComponent } from './components/d3chart/d3chart.component';
 import { InternetCareComponent } from './components/internet_care/internet_care.component';
+import { WifiCareComponent } from './components/wifi_care/wifi_care.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     InternetCareComponent,
+    WifiCareComponent,
     D3chartComponent
 
   ],
