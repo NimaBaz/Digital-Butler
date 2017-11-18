@@ -8,6 +8,7 @@ import { InternetCareComponent } from './components/internet_care/internet_care.
 import { WifiCareComponent } from './components/wifi_care/wifi_care.component';
 import { DeviceCareComponent } from './components/device_care/device_care.component';
 import { ProductServiceComponent } from './components/product_service/product_service.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ProductServiceComponent } from './components/product_service/product_se
     WifiCareComponent,
     DeviceCareComponent,
     ProductServiceComponent,
+    ToolbarComponent,
     D3chartComponent
 
   ],
