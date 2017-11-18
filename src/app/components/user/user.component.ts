@@ -12,6 +12,10 @@ export class UserComponent implements OnInit {
   width:number;
   id:number;
   minimId:number;
+        
+  monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"
+  ];
   constructor() {
     console.log('constructor ran..');
   }
@@ -24,8 +28,24 @@ export class UserComponent implements OnInit {
         this.width = $("#A1").width();
         console.log(this.width);
         $("span").width = this.width;
-
-           
+        var todayDate = new Date();
+        var month = this.monthNames[todayDate.getMonth()];
+        var day = todayDate.getDate();
+        var year = todayDate.getFullYear();
+        var time = todayDate.getHours();
+        var minute = todayDate.getMinutes();
+        var min;
+        if(minute < 10) { 
+            min = "0" + minute ;
+        } else {
+            min = minute;
+        }
+        var ampm = "am";
+        if(time > 12) {
+            time -= 12;
+            ampm = "pm";
+        }
+        document.getElementById('date').textContent = month + ", " + day + ", "+ year +" , "+ time + ":" + min + " " + ampm;
     }
 
     openTab(evt, tabName) {

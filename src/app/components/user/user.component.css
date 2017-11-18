@@ -23,6 +23,14 @@ a {
 #box1text p {
     font-size: 12px;
 }
+#date{
+    float:right;
+    margin-right: 200px;
+    border: 1px solid lightblue;
+    float: right;
+    color: lightblue;
+    padding: 2px;
+}
 div .header {
     float:right;
 }
@@ -35,7 +43,7 @@ div i {
 div button {
     float:right;
 }
-p {
+#databox p {
     font-size: 14px;
 }
 
