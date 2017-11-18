@@ -9,6 +9,7 @@ import { WifiCareComponent } from './components/wifi_care/wifi_care.component';
 import { DeviceCareComponent } from './components/device_care/device_care.component';
 import { ProductServiceComponent } from './components/product_service/product_service.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { NavBarComponent } from './components/nav_bar/nav_bar.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     DeviceCareComponent,
     ProductServiceComponent,
     ToolbarComponent,
+    NavBarComponent,
     D3chartComponent
 
   ],

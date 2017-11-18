@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class DeviceCareComponent implements OnInit{
     name:string;
     constructor() {
-    	console.log('constructor internetCare..');
+    	console.log('constructor device_care..');
       }
       
       ngOnInit(){

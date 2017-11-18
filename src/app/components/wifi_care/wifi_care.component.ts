@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class WifiCareComponent implements OnInit{
     name:string;
     constructor() {
-    	console.log('constructor internetCare..');
+    	console.log('constructor wifi_care..');
       }
       
       ngOnInit(){
