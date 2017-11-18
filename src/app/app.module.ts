@@ -6,6 +6,7 @@ import { UserComponent } from './components/user/user.component';
 import { D3chartComponent } from './components/d3chart/d3chart.component';
 import { InternetCareComponent } from './components/internet_care/internet_care.component';
 import { WifiCareComponent } from './components/wifi_care/wifi_care.component';
+import { DeviceCareComponent } from './components/device_care/device_care.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { WifiCareComponent } from './components/wifi_care/wifi_care.component';
     UserComponent,
     InternetCareComponent,
     WifiCareComponent,
+    DeviceCareComponent,
     D3chartComponent
 
   ],
