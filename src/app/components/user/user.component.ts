@@ -32,20 +32,23 @@ export class UserComponent implements OnInit {
         var month = this.monthNames[todayDate.getMonth()];
         var day = todayDate.getDate();
         var year = todayDate.getFullYear();
-        var time = todayDate.getHours();
+        var hour = todayDate.getHours();
         var minute = todayDate.getMinutes();
         var min;
+        if(hour==0)
+            hour=12;
+        if(hour > 12) {
+            hour -= 12;
+            ampm = "pm";
+        }
         if(minute < 10) { 
             min = "0" + minute ;
         } else {
             min = minute;
         }
         var ampm = "am";
-        if(time > 12) {
-            time -= 12;
-            ampm = "pm";
-        }
-        document.getElementById('date').textContent = month + ", " + day + ", "+ year +" , "+ time + ":" + min + " " + ampm;
+        
+        document.getElementById('date').textContent = month + ", " + day + ", "+ year +" , "+ hour + ":" + min + " " + ampm;
     }
 
     openTab(evt, tabName) {
@@ -68,7 +71,7 @@ export class UserComponent implements OnInit {
 
     remove(id_) { 
             
-            $("#" + id_).hide();
+        $("#" + id_).hide();
     }
     showDiv(id_) {
         $("#" + id_).show();

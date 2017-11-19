@@ -23,20 +23,19 @@ a {
     color: lightblue;
     padding: 2px;
 }
-/*I dont know what this does
-/*This is useless
+
+This is useless
 div .header {
     float:right;
 }
-*/
-/*I dont know what this does
-/*
+
+
 div i {
   
     
     float:right;
 }
-*/
+
 div button {
     float:right;
 }
@@ -54,7 +53,7 @@ div button {
 .jumbotron {
     width: 100%;
 }
-/* span {
+span {
     padding-top: 5px;
     height: 30px;
     width: 100%;
@@ -62,7 +61,7 @@ div button {
     text-align: right;    
     background-color:rgb(255,255,255);
     float: right;
-} */
+}
 .col-lg-1 {
     width: 5%;
 }
@@ -81,9 +80,7 @@ i {
     color: gray;
 }
 
-.row-header{
-    padding-top:5px;
-}
+
 #refresh{
     margin-top:45px;
     margin-bottom:5px;
@@ -174,9 +171,10 @@ ul li {
     border: 15px lightgray;
 
 }
-#dataBox {
+.network {
     background-color: white;
     height: 50em;
+    margin-top:10px;
 }
 #toolbar {
     background-color: white;

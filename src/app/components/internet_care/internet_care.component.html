@@ -1,19 +1,21 @@
 <div class="col-lg-4 col-md-4">
     <!-- Internet Care Box Title Span-->
-    <div class="topRow" id="intcare">
-        <div class="row row-header"> 
-            <div class="col-md-8 text-nowrap" id="scaleTitle">
-                <h3>Internet Care</h3>
+    <div id="intcare">
+        <span>
+            <div class="row row-header"> 
+                <div class="col-md-8 text-nowrap" id="scaleTitle">
+                    <h3>Internet Care</h3>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove('intcare')"></i></a>
+                    <a href="#"><i (click)="minimize('intcarebox')" class="glyphicon glyphicon-minus"></i></a>
+                </div>
             </div>
-            <div class="col-md-4">
-                <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove('intcare')"></i></a>
-                <a href="#"><i (click)="minimize('box1')" class="glyphicon glyphicon-chevron-down"></i></a>
-            </div>
-        </div>
+        </span>
 
         <!-- Internet Care Box-->
-      
-            <div class="row">
+        <div id="intcarebox" class="topRow">
+            <div class="row" >
                 <div class="col-lg-4" >
                     <div class="col-lg-4">
                         <a href="#">FAQ</a>  
@@ -46,5 +48,6 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 </div>

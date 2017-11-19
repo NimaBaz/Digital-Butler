@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AppComponent } from '../../app.component';
+declare var jquery:any;
+declare const $: any;
 @Component({
     selector: 'app-device_care',
     templateUrl: './device_care.component.html',
@@ -12,8 +14,19 @@ export class DeviceCareComponent implements OnInit{
     constructor() {
     	console.log('constructor device_care..');
       }
-      
-      ngOnInit(){
-
+      minimize(id_) { 
+        $("#" + id_).slideToggle();
       }
+      remove(id_) { 
+        
+        $("#" + id_).hide();
+      }
+      showDiv(id_) {
+        $("#" + id_).show();
+      }
+      ngOnInit() {
+          
+      }
+     
+     
 }

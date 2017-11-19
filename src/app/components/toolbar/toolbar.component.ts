@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var jquery:any;
+declare const $: any;
 @Component({
     selector: 'app-toolbar',
     templateUrl: './toolbar.component.html',
@@ -15,5 +16,15 @@ export class ToolbarComponent implements OnInit{
       
       ngOnInit(){
 
+      }
+      minimize(id_) { 
+        $("#" + id_).slideToggle();
+      }
+      remove(id_) { 
+        
+        $("#" + id_).hide();
+      }
+      showDiv(id_) {
+        $("#" + id_).show();
       }
 }
