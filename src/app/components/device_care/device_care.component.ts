@@ -1,25 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../../app.component';
 declare var jquery:any;
 declare const $: any;
 @Component({
-    selector: 'app-toolbar',
-    templateUrl: './toolbar.component.html',
-    styleUrls: ['./toolbar.component.css', 
+    selector: 'app-device_care',
+    templateUrl: './device_care.component.html',
+    styleUrls: ['./device_care.component.css', 
     '../user/user.component.css']
 })
 
-export class ToolbarComponent implements OnInit{
+export class DeviceCareComponent implements OnInit{
     name:string;
     constructor() {
-    	console.log('constructor toolbar..');
-      }
-      
-      ngOnInit(){
-<<<<<<< HEAD
-        $("#toolbar").draggable();
-=======
-
->>>>>>> 903d9cc84f659b6e9dba3eb1f71e9826dbfbcc14
+    	console.log('constructor device_care..');
       }
       minimize(id_) { 
         $("#" + id_).slideToggle();
@@ -31,4 +24,9 @@ export class ToolbarComponent implements OnInit{
       showDiv(id_) {
         $("#" + id_).show();
       }
+      ngOnInit() {
+          
+      }
+     
+     
 }

@@ -2,24 +2,20 @@ import { Component, OnInit } from '@angular/core';
 declare var jquery:any;
 declare const $: any;
 @Component({
-    selector: 'app-toolbar',
-    templateUrl: './toolbar.component.html',
-    styleUrls: ['./toolbar.component.css', 
+    selector: 'app-product_service',
+    templateUrl: './product_service.component.html',
+    styleUrls: ['./product_service.component.css', 
     '../user/user.component.css']
 })
 
-export class ToolbarComponent implements OnInit{
+export class ProductServiceComponent implements OnInit{
     name:string;
     constructor() {
-    	console.log('constructor toolbar..');
+    	console.log('constructor product_service..');
       }
       
       ngOnInit(){
-<<<<<<< HEAD
-        $("#toolbar").draggable();
-=======
 
->>>>>>> 903d9cc84f659b6e9dba3eb1f71e9826dbfbcc14
       }
       minimize(id_) { 
         $("#" + id_).slideToggle();
