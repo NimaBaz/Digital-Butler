@@ -1,0 +1,63 @@
+<div class="col-lg-10 col-md-6">
+    <div id="datavisualization" class="network">
+            <!-- B Box Title/Tab Span-->
+            <span>
+                <div class="tab" id="dataTabs">
+                    <div class="scaleText">
+                        <button class="tablinks" (click)="openTab(event, 'NETWORK DEVICES')" id="defaultOpen">
+                            <p>NETWORK DEVICES</p>
+                        </button>    
+                    </div>
+                    <div class="scaleText">
+                        <button class="tablinks text-nowrap" (click)="openTab(event, 'INTERNET UP/DOWN')">
+                            <p>INTERNET UP/DOWN</p>
+                        </button>
+                    </div>
+                    <div class="scaleText">
+                        <button class="tablinks text-nowrap" (click)="openTab(event, 'AVAILABLE UP/DOWN BANDWIDTH')">
+                            <p>AVAILABLE UP/DOWN BANDWIDTH</p>
+                        </button>
+                    </div>
+                    <div class="scaleText">
+                        <button class="tablinks text-nowrap" (click)="openTab(event, 'WAN TX/RX PACKETS')">
+                            <p>WAN TX/RX PACKETS</p>
+                        </button>
+                    </div>
+                    <div class="scaleText">
+                        <button class="tablinks text-nowrap" (click)="openTab(event, 'WIFI NEIGHBOR LIST')">
+                            <p>WIFI NEIGHBOR LIST</p>
+                        </button>
+                    </div>
+                    <div class="scaleText">
+                        <button class="tablinks text-nowrap" (click)="openTab(event, 'NEIGHBOR WIFI INTERFERENCE')">
+                            <p>NEIGHBOR WIFI INTERFERENCE</p>
+                        </button>
+                    </div>
+                    <div class="scaleText">
+                        <p>
+                            <a href="#"><i class="glyphicon glyphicon-remove" (click)="remove('dataBox')"></i></a>
+                            <a href="#"><i (click)="minimize('datavisualizationbox')" class="glyphicon glyphicon-minus"></i></a>
+                        </p>
+                    </div>
+                    <br>
+                </div>
+            </span>
+
+            <div id="datavisualizationbox">
+                <p class="text-nowrap" id="date">Date</p>
+
+                <div id="NETWORK DEVICES" class="tabcontent">
+                   <app-d3chart></app-d3chart>   
+                </div>   
+    
+                <!-- -->
+                <div id="INTERNET UP/DOWN" class="tabcontent">
+                    <h3></h3>
+                    <h4></h4>
+                    <h5></h5>
+                    <p>I made Tabs</p>
+                </div> 
+            </div>
+
+    </div>
+</div>

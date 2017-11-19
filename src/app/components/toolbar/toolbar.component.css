@@ -1,0 +1,10 @@
+#toolbar a{
+    padding: 0px;
+    margin: 0px;
+}
+div button {
+    float:right;
+}
+.boxShadow {
+    box-shadow: 8px 8px 5px #888888;
+}

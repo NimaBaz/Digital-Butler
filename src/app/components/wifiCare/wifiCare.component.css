@@ -1,0 +1,12 @@
+div i {  
+    float:right;
+}
+span {
+    padding-top: 5px;
+    height: 30px;
+    width: 100%;
+    position: relative;
+    text-align: right;    
+    background-color:rgb(255,255,255);
+    float: right;
+}

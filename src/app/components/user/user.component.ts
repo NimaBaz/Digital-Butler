@@ -12,6 +12,7 @@ export class UserComponent implements OnInit {
   width:number;
   id:number;
   minimId:number;
+
   constructor() {
     console.log('constructor ran..');
   }
@@ -19,45 +20,23 @@ export class UserComponent implements OnInit {
     ngOnInit() {
         //this.name = 'Hello, World!';
         //$("h1").html("hi");
-        $("#E").draggable();
         
-        this.width = $("#A1").width();
-        console.log(this.width);
-        $("span").width = this.width;
-
-           
-    }
-
-    openTab(evt, tabName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
     }
 
     minimize(id_) { 
             $("#" + id_).slideToggle();
     }
 
-    remove(event) { 
-            this.id = event.target.parentElement.parentElement.getAttribute("id");
-            $("#"+ this.id).hide();
+    remove(id_) { 
+            
+        $("#" + id_).hide();
     }
-
+    showDiv(id_) {
+        $("#" + id_).show();
+    }
     minimize3(id_) {
             var div_to_toggle = '#' + id_ ;
             $(div_to_toggle).slideToggle();
-    }
-
-    changeDivContent(){
-        document.getElementById("B2").innerHTML = "stuff";
     }
 
     /*stuff for pop ups*/

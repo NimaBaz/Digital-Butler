@@ -3,6 +3,11 @@
     background-color:white;
     padding: 10px;
 }
+body{
+    background-color: rgb(238, 238, 238);
+    
+    
+}
 #brand {
     max-width:50%;
     max-height:50%;
