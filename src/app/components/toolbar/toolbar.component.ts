@@ -15,11 +15,7 @@ export class ToolbarComponent implements OnInit{
       }
       
       ngOnInit(){
-<<<<<<< HEAD
         $("#toolbar").draggable();
-=======
-
->>>>>>> 903d9cc84f659b6e9dba3eb1f71e9826dbfbcc14
       }
       minimize(id_) { 
         $("#" + id_).slideToggle();

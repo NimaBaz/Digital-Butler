@@ -23,44 +23,12 @@ a {
     color: lightblue;
     padding: 2px;
 }
-<<<<<<< HEAD
 /*
 div i {  
     float:right;
 }
 div button {
     float:right;
-=======
-
-This is useless
-div .header {
-    float:right;
-}
-
-
-div i {
-  
-    
-    float:right;
-}
-
-div button {
-    float:right;
-}
-#databox p {
-    font-size: 14px;
-}
-
-
-.container{
-    margin: 0 auto;
-    padding: 0;
-    width: 96%;
-    float:left;
-}
-.jumbotron {
-    width: 100%;
->>>>>>> 903d9cc84f659b6e9dba3eb1f71e9826dbfbcc14
 }
 span {
     padding-top: 5px;
@@ -71,7 +39,6 @@ span {
     background-color:rgb(255,255,255);
     float: right;
 }
-<<<<<<< HEAD
 */
 
 
@@ -85,8 +52,6 @@ span {
     width: 100%;
 }
 
-=======
->>>>>>> 903d9cc84f659b6e9dba3eb1f71e9826dbfbcc14
 .col-lg-1 {
     width: 5%;
 }
@@ -103,24 +68,12 @@ i {
     font-size: 1.5em;
     margin-right:5px;
     color: gray;
-<<<<<<< HEAD
 }
 
 
 #refresh{
     margin-top:45px;
     margin-bottom:5px;
-=======
-}
-
-
-#refresh{
-    margin-top:45px;
-    margin-bottom:5px;
-}
-.scaleText p {
-    font-size: 0.8vw;
->>>>>>> 903d9cc84f659b6e9dba3eb1f71e9826dbfbcc14
 }
 
 #scaleTitle h3 {
@@ -138,11 +91,6 @@ i {
     display: block;
     text-align: center;
     padding:0px 2px 0px 2px;
-<<<<<<< HEAD
-=======
- 
-  
->>>>>>> 903d9cc84f659b6e9dba3eb1f71e9826dbfbcc14
 }
 .topRow {
     background-color: white;
