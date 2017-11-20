@@ -1,5 +1,12 @@
 <div class="col-lg-5 col-md-6">
-    
+
+    <div id="testModal" class="modal">
+        <div class="modal-content">
+            <span class="close" (click)="closeModal('testModal')">&times;</span>
+            <p>chicidee... test modal</p>
+        </div>
+    </div>
+
     <div  id="devicecare">
         <span>
             <div class="row row-header">
@@ -21,42 +28,224 @@
                 <div class="col-lg-10">
                     <div class="row text-left">
                         <div class="col-lg-4"> 
-                            <a href="#" (click)="myFunction2('myModal')">Devices on 2.4GHZ</a>
-                            <div id="myModal" class="modal">
-                                <div class="modal-content">
-                                    <span class="close" (click)="closeFunct('myModal')">&times;</span>
-                                    <p>Some text in the Modal..</p>
+                            <a href="#" (click)="smallModal('Devices_2.4GHZ')">Devices on 2.4GHZ</a>
+                            <div id="Devices_2.4GHZ" class="small_modal">
+                                <div class="small_modal-content">
+                                    <div class="row row-header">
+                                        <div class="col-lg-8"></div>
+                                        <div class="close col-lg-4" (click)="closeModal('Devices_2.4GHZ')">&times;</div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-speaker.png" alt="error"> 
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-camera-security.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-thermostat.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <h4> <strong>5</strong></h4>
                                 
                         </div>
-                        <div class="col-lg-4">
-                            <a href="#" class="popup" (click)="myFunction('PopupGDO')">Guest Devices
-                                <div class="popuptext" id="PopupGDO">A Simple Popup!</div>
-                            </a>
+                        <div class="col-lg-4">               
+                            <a href="#" (click)="smallModal('GuestDevices')">Guest Devices</a>
+                            <div id="GuestDevices" class="small_modal">
+                                <div class="small_modal-content">
+                                    <div class="row row-header">
+                                        <div class="col-lg-8"></div>
+                                        <div class="close col-lg-4" (click)="closeModal('GuestDevices')">&times;</div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-speaker.png" alt="error"> 
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-camera-security.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-thermostat.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <h4> <strong>1</strong></h4> 
                         </div>
                         <div class="col-lg-4">
-                            <a href="#">Bandwitdh Hogs</a>
+                            <a href="#" (click)="smallModal('BandwitdhHog')">Bandwitdh Hogs</a>
+                            <div id="BandwitdhHog" class="small_modal">
+                                <div class="small_modal-content">
+                                    <div class="row row-header">
+                                        <div class="col-lg-8"></div>
+                                        <div class="close col-lg-4" (click)="closeModal('BandwitdhHog')">&times;</div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-speaker.png" alt="error"> 
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-camera-security.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-thermostat.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <h4> <strong>0</strong></h4>    
                         </div>
                     </div>
-                    <div class="row  text-left">
+                    <div class="row text-left">
                         <div class="col-lg-4">
-                            <a href="#">Devices on 5GHZ</a>
+                            <a href="#"  (click)="smallModal('Devices_5GHZ')">Devices on 5GHZ</a>
+                            <div id="Devices_5GHZ" class="small_modal">
+                                <div class="small_modal-content">
+                                    <div class="row row-header">
+                                        <div class="col-lg-8"></div>
+                                        <div class="close col-lg-4" (click)="closeModal('Devices_5GHZ')">&times;</div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-speaker.png" alt="error"> 
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-camera-security.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-thermostat.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <h4> <strong>3</strong></h4>  
                             
                         </div>
                         <div class="col-lg-4">
-                            <a href="#" class="popup" (click)="myFunction('PopupWD')">Wired Devices
-                            <div class="popuptext" id="PopupWD">A Simple Popup!</div>
-                            </a>
+                            <a href="#" (click)="smallModal('WiredDevices')">Wired Devices</a>
+                            <div id="WiredDevices" class="small_modal">
+                                <div class="small_modal-content">
+                                    <div class="row row-header">
+                                        <div class="col-lg-8"></div>
+                                        <div class="close col-lg-4" (click)="closeModal('WiredDevices')">&times;</div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-speaker.png" alt="error"> 
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-camera-security.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-thermostat.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <h4> <strong>2</strong></h4>
 
                         </div>
                         <div class="col-lg-4">
-                            <a href="#">Offline devices Hogs</a>
+                            <a href="#" (click)="smallModal('OfflineDeviceHog')">Offline devices Hogs</a>
+                            <div id="OfflineDeviceHog" class="small_modal">
+                                <div class="small_modal-content">
+                                    <div class="row row-header">
+                                        <div class="col-lg-8"></div>
+                                        <div class="close col-lg-4" (click)="closeModal('OfflineDeviceHog')">&times;</div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-speaker.png" alt="error"> 
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-camera-security.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-left">
+                                        <div class="col-lg-6">
+                                            <img class="medimg" src="../assets/masterIcons/device-thermostat.png" alt="error">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" (click)="normalModal('testModal')">more info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <h4> <strong>3</strong></h4> 
                         </div>
                     </div>

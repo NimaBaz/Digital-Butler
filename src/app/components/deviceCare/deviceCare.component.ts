@@ -14,6 +14,10 @@ export class DeviceCareComponent implements OnInit{
     constructor() {
     	console.log('constructor device_care..');
       }
+
+      ngOnInit() {
+        
+      }
       minimize(id_) { 
         $("#" + id_).slideToggle();
       }
@@ -24,9 +28,18 @@ export class DeviceCareComponent implements OnInit{
       showDiv(id_) {
         $("#" + id_).show();
       }
-      ngOnInit() {
-          
+
+      smallModal(some_ID) {
+        var small_modal = document.getElementById(some_ID);
+        small_modal.style.display = "block";
       }
-     
+      normalModal(some_ID) {
+        var modal = document.getElementById(some_ID);
+        modal.style.display = "block";
+      }
+      closeModal(some_ID){
+        var modal = document.getElementById(some_ID);
+        modal.style.display = "none";
+      }
      
 }
