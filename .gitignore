@@ -34,6 +34,11 @@ testem.log
 /typings
 gitignore
 editorconfig
+.\src\app\components\product_service\
+.\src\app\components\device_care\
+.\src\app\components\nav_bar
+.\src\app\components\wifi_care\
+*.swp
 
 # e2e
 /e2e/*.js
