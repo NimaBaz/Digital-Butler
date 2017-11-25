@@ -17,6 +17,7 @@ export class D3chartComponent implements OnInit {
         var svg = d3.select("svg"),
         width = +svg.attr("width"),
         height = +svg.attr("height");  
+        window.addEventListener('resize', svg.render);
         
         document.getElementById("defaultOpen").click();
 

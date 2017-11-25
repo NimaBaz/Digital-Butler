@@ -4,11 +4,16 @@ div i {
 span {
     padding-top: 5px;
     padding-left: 15px;
+    padding-right: 15px;
     height: 30%;
     width: 100%;
     position: relative;
     text-align: left;    
     background-color:rgb(255,255,255);
     float: right;
+}
+subText{
+    text-align: left;
+    padding-right: 10px;
 }
 
