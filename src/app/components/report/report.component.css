@@ -70,6 +70,11 @@ div.tab button.active {
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
+.network {
+    background-color: white;
+    margin-top:10px;
+}
+
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}

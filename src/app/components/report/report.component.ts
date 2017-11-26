@@ -15,16 +15,6 @@ export class ReportComponent implements OnInit{
     constructor() {
     	console.log('constructor data_visualization..');
       }
-      minimize(id_) { 
-        $("#" + id_).slideToggle();
-      }
-      remove(id_) { 
-        
-        $("#" + id_).hide();
-      }
-      showDiv(id_) {
-        $("#" + id_).show();
-      }
 
       monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
       "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"
@@ -68,6 +58,17 @@ export class ReportComponent implements OnInit{
         }
         document.getElementById(tabName).style.display = "block";
         //evt.currentTarget.className += " active";
+      }
+
+      minimize(id_) { 
+        $("#" + id_).slideToggle();
+      }
+      remove(id_) { 
+        
+        $("#" + id_).hide();
+      }
+      showDiv(id_) {
+        $("#" + id_).show();
       }
      
      
