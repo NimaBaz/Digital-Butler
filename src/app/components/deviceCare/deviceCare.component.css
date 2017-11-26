@@ -3,10 +3,11 @@ div i {
 }
 span {
     padding-top: 5px;
-    height: 30px;
+    padding-left: 15px;
+    height: 30%;
     width: 100%;
     position: relative;
-    text-align: right;    
+    text-align: left;    
     background-color:rgb(255,255,255);
     float: right;
 }

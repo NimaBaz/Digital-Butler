@@ -1,3 +1,4 @@
+
 <nav class="nav navbar-light bg-primary">
     <div class="container-fluid">
         
@@ -5,11 +6,47 @@
             <a href="/"><img id="brand"src="assets/digitalbutler2.png"></a>
         </div>
         
-        <div class="collapse navbar-collapse">
-            <div class="nav navbar-nav navbar-right">
-                <li><a href="/">Log In</a></li>
-                <li><a href="/">Log Out</a></li>
+            <div class="collapse navbar-collapse">
+                <div class="nav navbar-nav navbar-right">
+                    
+                    <!--<li><a href="/">Log In</a>target="_blank"</li>
+                    <li><a href="/">Log Out</a>target="_blank"</li>-->
+                                        
+                        <!-- Button to open Login Popup-->
+                        <div id="logText">
+                                <li><a onclick="document.getElementById('login').style.display='block'">Login</a></li>
+                        </div>
+
+                        <!-- Popup -->
+                        <div id="login" class="modal">
+                        <span onclick="document.getElementById('login').style.display='none'" 
+                        class="close" title="Close Modal">&times;</span>
+
+                        <!-- Content of Popup -->
+                        <form class="modal-content animate" action="/action_page.php">
+                            
+                                <h1 class="title">Log In</h1>
+                        
+
+                        <div class="container">
+                            <label><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button type="submit">Login</button>
+                            <input type="checkbox" checked="checked"> Remember me
+                        </div>
+
+                        <div class="container">
+                        <button type="button" onclick="document.getElementById('login').style.display='none'" class="closewindow">Cancel</button>
+                        <span class="psw"> <a href="#">Forgot password?</a></span>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </nav>
+

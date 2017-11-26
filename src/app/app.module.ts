@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
-import { D3chartComponent } from './components/d3chart/d3chart.component';
+import { BubbleChartComponent } from './components/d3chart/bubbleChart/bubbleChart.component';
+import { HeatMapComponent } from './components/d3chart/heatMap/heatMap.component';
 import { InternetCareComponent } from './components/internetCare/internetCare.component';
 import { WifiCareComponent } from './components/wifiCare/wifiCare.component';
 import { DeviceCareComponent } from './components/deviceCare/deviceCare.component';
@@ -22,7 +23,8 @@ import { ReportComponent } from './components/report/report.component';
     PromosComponent,
     ToolbarComponent,
     NavBarComponent,
-    D3chartComponent,
+    BubbleChartComponent,
+    HeatMapComponent,
     ReportComponent
 
   ],
