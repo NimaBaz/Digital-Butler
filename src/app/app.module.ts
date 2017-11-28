@@ -27,7 +27,8 @@ import { LoginComponent } from './login/login.component';
     NavBarComponent,
     BubbleChartComponent,
     HeatMapComponent,
-    ReportComponent
+    ReportComponent,
+    LoginComponent
 
   ],
   imports: [
