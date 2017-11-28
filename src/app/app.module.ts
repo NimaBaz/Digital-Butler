@@ -25,15 +25,9 @@ import { LoginComponent } from './login/login.component';
     PromosComponent,
     ToolbarComponent,
     NavBarComponent,
-<<<<<<< HEAD
-    D3chartComponent,
-    ReportComponent,
-    LoginComponent
-=======
     BubbleChartComponent,
     HeatMapComponent,
     ReportComponent
->>>>>>> 0644a3c8227ee02617ee70cd3da82246232d164a
 
   ],
   imports: [
