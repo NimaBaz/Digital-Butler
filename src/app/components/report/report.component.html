@@ -1,7 +1,8 @@
 <div class="col-lg-10 col-md-6">
     <div id="datavisualization" class="network">
-            <!-- B Box Title/Tab Span-->
+            <!-- Report Title/Tab Span-->
             <span>
+                <!-- buttons of the tabs -->
                 <div class="tab" id="dataTabs">
                     <div class="scaleText">
                         <button class="tablinks" (click)="openTab(event, 'NETWORK DEVICES')" id="defaultOpen">
@@ -39,11 +40,13 @@
                             <a href="#"><i (click)="minimize('datavisualizationbox')" class="glyphicon glyphicon-minus"></i></a>
                         </p>
                     </div>
-                   
+                    <br>
                 </div>
             </span>
 
             <div id="datavisualizationbox">
+
+                <!-- card content will display one of these depending on what tab is clicked -->
 
                 <p class="text-nowrap" id="date">Date</p>
 

@@ -13,6 +13,8 @@ export class BubbleChartComponent implements OnInit {
   	}
 
   	ngOnInit() {
+
+        /* D3 bubble chart implementation */
      
         var svg = d3.select("svg"),
         width = +svg.attr("width"),

@@ -18,6 +18,8 @@ export class DeviceCareComponent implements OnInit{
       ngOnInit() {
         
       }
+
+      /* functions for minimizing/closing cards */
       minimize(id_) { 
         $("#" + id_).slideToggle();
       }

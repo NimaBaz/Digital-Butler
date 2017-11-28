@@ -17,10 +17,10 @@ export class UserComponent implements OnInit {
   }
 
     ngOnInit() {
-        //this.name = 'Hello, World!';
-        //$("h1").html("hi");
         
     }
+
+    /* functions for minimizing/closing cards */
 
     minimize(id_) { 
             $("#" + id_).slideToggle();

@@ -14,6 +14,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
 
+    /* D3 bubble chart implementation for login page*/
+    /* This is just for fun and may be implemented depending on how successful it is*/
+
     var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");  
@@ -59,9 +62,6 @@ export class LoginComponent implements OnInit {
     var div = d3.select("body").append("div")  
         .attr("class", "tooltip")        
         .style("opacity", 0);
-    
-    
-    
     
     
     

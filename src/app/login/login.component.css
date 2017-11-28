@@ -1,14 +1,15 @@
 .container{
-
-height: 100vh;
-width: 100%;
-background: rgb(38, 0, 255); /* For browsers that do not support gradients */
-background: -webkit-linear-gradient(rgb(1, 130, 204), rgb(0, 10, 148)); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(rgb(1, 130, 204), rgb(0, 10, 148)); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(rgb(1, 130, 204), rgb(0, 10, 148)); /* For Firefox 3.6 to 15 */
-background: linear-gradient(rgb(1, 130, 204), rgb(0, 10, 148)); /* Standard syntax */
+    /* Gradient effect for background */
+    height: 100vh;
+    width: 100%;
+    background: rgb(38, 0, 255); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(1, 130, 204), rgb(0, 10, 148)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(1, 130, 204), rgb(0, 10, 148)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(1, 130, 204), rgb(0, 10, 148)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(1, 130, 204), rgb(0, 10, 148)); /* Standard syntax */
 }
 
+/* main login container */
 .container2{
     height:400px;
     width:400px;
@@ -33,9 +34,8 @@ h1{
 
 svg {
     border:0px solid black;
-    margin-top: 5px;
-    
-  }
+    margin-top: 5px;    
+}
   
   /*d3 styling*/
   .links line {

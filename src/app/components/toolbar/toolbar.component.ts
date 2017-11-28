@@ -17,6 +17,8 @@ export class ToolbarComponent implements OnInit{
       ngOnInit(){
         $("#toolbar").draggable();
       }
+      
+      /* functions for minimizing/closing cards */
       minimize(id_) { 
         $("#" + id_).slideToggle();
       }
