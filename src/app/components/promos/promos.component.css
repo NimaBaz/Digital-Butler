@@ -16,4 +16,11 @@ span {
     background-color:rgb(255,255,255);
     float: right;
 }
+.promobox {
+    background-color: rgb(255, 255, 255);
+ 
+    height: 52em;
+    padding: 20px;
+    border: 15px lightgray;
 
+}

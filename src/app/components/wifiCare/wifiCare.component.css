@@ -26,3 +26,11 @@ subText{
         text-overflow:ellipsis;
     }
 }
+
+@media (min-width: 0px) and (max-width: 1400px) {
+    .hidetextoverflow {
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+    }
+}

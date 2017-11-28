@@ -15,6 +15,7 @@ span {
     background-color:rgb(255,255,255);
     float: right;
 }
+
 .scaleText p {
     font-size: 0.8vw;
 }
@@ -22,7 +23,7 @@ span {
     font-size: 0.8vw;
 }
 .todaydate{
-    margin-top:45px;
+    margin-top:5px;
     margin-right: 200px;
     border: 1px solid lightblue;
     float: right;
@@ -34,6 +35,9 @@ span {
     background-color: white;
     height: 5em;
     padding: 10px;
+}
+.databox{
+    height:52em;
 }
 /* Style the buttons inside the tab */
 div.tab button {
