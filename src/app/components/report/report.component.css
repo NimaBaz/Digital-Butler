@@ -7,7 +7,7 @@ div button {
 span {
     size:1px;
     padding-top: 5px;
-    height: 30px;
+    height: 6em;
     width: 100%;
     padding-left: 30px;
     position: relative;
@@ -21,7 +21,14 @@ span {
 .scaleText p {
     font-size: 0.8vw;
 }
-
+.todaydate{
+    margin-top:45px;
+    margin-right: 200px;
+    border: 1px solid lightblue;
+    float: right;
+    color: lightblue;
+    padding: 2px;
+}
 /* Style the tab */
 #dataTabs{
     background-color: white;
@@ -74,6 +81,7 @@ div.tab button.active {
 .network {
     background-color: white;
     margin-top:10px;
+  
 }
 
 /* tab changing effects */

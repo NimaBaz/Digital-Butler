@@ -17,3 +17,10 @@ subText{
     padding-right: 10px;
 }
 
+@media (min-width: 400px) and (max-width: 1400px) {
+    .hideoverflow {
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+    }
+}
