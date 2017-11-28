@@ -5,17 +5,15 @@ div button {
     float:right;
 }
 span {
-    padding-top: 5px;
-    height: 30px;
+    size:1px;
+    padding-top: 0px;
+    height: 100px;
     width: 100%;
     padding-left: 30px;
     position: relative;
     text-align: right;    
     background-color:rgb(255,255,255);
     float: right;
-}
-.scaleText p {
-    font-size: 0.8vw;
 }
 .scaleText p {
     font-size: 0.8vw;
