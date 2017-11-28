@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import * as d3 from 'd3';
 @Component({
-  selector: 'app-d3chart',
-  templateUrl: './d3chart.component.html',
-  styleUrls: ['./d3chart.component.css']
+  selector: 'app-bubbleChart',
+  templateUrl: './bubbleChart.component.html',
+  styleUrls: ['./bubbleChart.component.css']
 })
 
-export class D3chartComponent implements OnInit {
+export class BubbleChartComponent implements OnInit {
 	name:string;
 	constructor() {
     	console.log('constructor D3chart..');

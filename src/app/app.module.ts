@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
-import { D3chartComponent } from './components/d3chart/d3chart.component';
+import { BubbleChartComponent } from './components/d3chart/bubbleChart/bubbleChart.component';
+import { HeatMapComponent } from './components/d3chart/heatMap/heatMap.component';
 import { InternetCareComponent } from './components/internetCare/internetCare.component';
 import { WifiCareComponent } from './components/wifiCare/wifiCare.component';
 import { DeviceCareComponent } from './components/deviceCare/deviceCare.component';
@@ -24,9 +25,15 @@ import { LoginComponent } from './login/login.component';
     PromosComponent,
     ToolbarComponent,
     NavBarComponent,
+<<<<<<< HEAD
     D3chartComponent,
     ReportComponent,
     LoginComponent
+=======
+    BubbleChartComponent,
+    HeatMapComponent,
+    ReportComponent
+>>>>>>> 0644a3c8227ee02617ee70cd3da82246232d164a
 
   ],
   imports: [
