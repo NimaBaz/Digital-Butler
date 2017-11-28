@@ -44,7 +44,7 @@ cd 'projectName'
 ng serve
 
 *****************************************************
-component design Document -
+Component Design Document -
 <pre>
                                            +-----------+
                                     +------+appNavbar  |
