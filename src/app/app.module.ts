@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -11,6 +12,7 @@ import { PromosComponent } from './components/promos/promos.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { NavBarComponent } from './components/nav_bar/nav_bar.component';
 import { ReportComponent } from './components/report/report.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ReportComponent } from './components/report/report.component';
     ToolbarComponent,
     NavBarComponent,
     D3chartComponent,
-    ReportComponent
+    ReportComponent,
+    LoginComponent
 
   ],
   imports: [

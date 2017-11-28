@@ -5,6 +5,7 @@ div button {
     float:right;
 }
 span {
+    size:1px;
     padding-top: 5px;
     height: 30px;
     width: 100%;
