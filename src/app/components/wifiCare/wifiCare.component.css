@@ -16,7 +16,9 @@ subText{
     text-align: left;
     padding-right: 10px;
 }
-
+.wifitext {
+    margin-top: 20px;
+}
 @media (min-width: 400px) and (max-width: 1400px) {
     .hideoverflow {
         overflow:hidden;

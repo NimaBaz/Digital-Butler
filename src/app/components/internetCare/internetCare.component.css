@@ -11,3 +11,9 @@ span {
     background-color:rgb(255,255,255);
     float: right;
 }
+.inttext {
+    margin-top: 20px;
+}
+p{
+    font-size: 1vw;
+}

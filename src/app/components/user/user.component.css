@@ -15,14 +15,7 @@ a {
 /* #box1text p {
     font-size: 12px;
 } */
-#date{
-    float:right;
-    margin-right: 200px;
-    border: 1px solid lightblue;
-    float: right;
-    color: lightblue;
-    padding: 2px;
-}
+
 /*
 div i {  
     float:right;
@@ -70,7 +63,11 @@ i {
     color: gray;
 }
 
-
+h3 {
+    
+    margin:0;
+    padding: 0;
+}
 #refresh{
     margin-top:45px;
     margin-bottom:5px;
