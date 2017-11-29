@@ -14,7 +14,7 @@ export class NavBarComponent implements OnInit{
       }
       
       ngOnInit(){
-
+        document.getElementById("defaultClick").click();
       }
 }
 

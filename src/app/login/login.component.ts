@@ -273,7 +273,6 @@ export class LoginComponent implements OnInit {
             .attr("y2", function(d) { return d.target.y; });
         
     
-    } 
-  }
-
+        }
+    }
 }

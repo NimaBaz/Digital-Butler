@@ -16,4 +16,6 @@ export class AppComponent  {
   showDiv(id_) {
     $("#" + id_).show();
   }
+
+  
 }

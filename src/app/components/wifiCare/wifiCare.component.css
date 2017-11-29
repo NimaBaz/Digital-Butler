@@ -16,4 +16,21 @@ subText{
     text-align: left;
     padding-right: 10px;
 }
+.wifitext {
+    margin-top: 20px;
+}
+@media (min-width: 400px) and (max-width: 1400px) {
+    .hideoverflow {
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+    }
+}
 
+@media (min-width: 0px) and (max-width: 1400px) {
+    .hidetextoverflow {
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+    }
+}

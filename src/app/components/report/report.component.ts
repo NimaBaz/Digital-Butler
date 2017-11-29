@@ -31,6 +31,7 @@ export class ReportComponent implements OnInit{
         var hour = todayDate.getHours();
         var minute = todayDate.getMinutes();
         var min;
+        var ampm = "am";
         if(hour==0)
             hour=12;
         if(hour > 12) {
@@ -42,7 +43,7 @@ export class ReportComponent implements OnInit{
         } else {
             min = minute;
         }
-        var ampm = "am";
+       
         
         document.getElementById('date').textContent = month + ", " + day + ", "+ year +" , "+ hour + ":" + min + " " + ampm;
       }
