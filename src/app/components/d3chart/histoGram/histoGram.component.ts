@@ -17,8 +17,8 @@ export class HistoGramComponent implements OnInit {
         var parseDate = d3.timeParse("%m/%d/%Y %H:%M:%S %p"),
             formatCount = d3.format(",.0f");
         var margin = {top: 10, right: 30, bottom: 30, left: 30},
-            width = 960 - margin.left - margin.right,
-            height = 500 - margin.top - margin.bottom;
+            width = 1400 - margin.left - margin.right,
+            height = 570 - margin.top - margin.bottom;
         var x = d3.scaleTime()
             .domain([new Date(2015, 0, 1), new Date(2015, 1, 1)])
             .rangeRound([0, width]);
