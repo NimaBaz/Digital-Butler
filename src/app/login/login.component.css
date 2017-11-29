@@ -11,7 +11,6 @@
 
 /* main login container */
 .container2{
-    position:absolute;
     height:400px;
     width:400px;
     text-align: center;
@@ -22,10 +21,12 @@
     border-radius: 50%;
     background: rgb(255, 255, 255);
     border: 3px solid rgb(255, 255, 255);
+    font-size: 15px;
 }
 
 h1{
     color:rgb(1, 130, 204);
+    font-size: 35px;
 }
 
 .nodes circle {
@@ -57,4 +58,7 @@ svg {
     pointer-events: none;
     box-shadow: 0px 0px 20px #888888;			
   }
-  
+
+p {
+    font-size: 15px;
+}
