@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { AppComponent } from '../../app.component';
-declare var jquery:any;
+import * as jquery from "jquery";
+// declare var jquery:any;
 declare const $: any;
+
 @Component({
     selector: 'app-report',
     templateUrl: './report.component.html',
