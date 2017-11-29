@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3846 385 26 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #616161;
+      }
+    </style>
+  </defs>
+  <path id="internet" class="cls-1" d="M5,1C3.688,1,2,1.688,2,3V8c0,1.312,1.688,2,3,2H1v3H15V10H12a1.785,1.785,0,0,0,2-2V3a1.785,1.785,0,0,0-2-2H5M5,3h7V8H5V3M3,15v8h9V21H6V15H3m13,0c-1.312,0-2,1.688-2,3v4c0,1.312.688,3,2,3H13v2H27V25H23a3.582,3.582,0,0,0,3-3V18a3.582,3.582,0,0,0-3-3H16m0,3h7v4H16Z" transform="translate(3845 384)"/>
+</svg>

@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="3846 385 26 26">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #616161;
-      }
-    </style>
-  </defs>
-  <path id="internet" class="cls-1" d="M5,1C3.688,1,2,1.688,2,3V8c0,1.312,1.688,2,3,2H1v3H15V10H12a1.785,1.785,0,0,0,2-2V3a1.785,1.785,0,0,0-2-2H5M5,3h7V8H5V3M3,15v8h9V21H6V15H3m13,0c-1.312,0-2,1.688-2,3v4c0,1.312.688,3,2,3H13v2H27V25H23a3.582,3.582,0,0,0,3-3V18a3.582,3.582,0,0,0-3-3H16m0,3h7v4H16Z" transform="translate(3845 384)"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M4,1C2.89,1 2,1.89 2,3V7C2,8.11 2.89,9 4,9H1V11H13V9H10C11.11,9 12,8.11 12,7V3C12,1.89 11.11,1 10,1H4M4,3H10V7H4V3M3,13V18L3,20H10V18H5V13H3M14,13C12.89,13 12,13.89 12,15V19C12,20.11 12.89,21 14,21H11V23H23V21H20C21.11,21 22,20.11 22,19V15C22,13.89 21.11,13 20,13H14M14,15H20V19H14V15Z" /></svg>
