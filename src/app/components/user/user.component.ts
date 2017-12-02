@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserAccountService } from './user-account.service';
 
 declare var jquery:any;
 declare const $: any;
@@ -8,11 +9,8 @@ declare const $: any;
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  name:string;
-  width:number;
-  id:number;
-  minimId:number;
-  constructor() {
+
+  constructor(private user:UserAccountService) {
     console.log('constructor ran..');
   }
 
