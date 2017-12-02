@@ -11,8 +11,9 @@ export class AuthenticationGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    this.router.navigate(['/']);
-    console.log('You are not authenticated');
+    if(this.user.getUserLoggedIn()==false){
+      this.router.navigate(['/']);
+    }
     return this.user.getUserLoggedIn();
   }
 }
