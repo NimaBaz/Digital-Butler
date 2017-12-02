@@ -58,7 +58,7 @@ export class HeatMapComponent implements OnInit {
                 };
             },
                 function(error, data) {
-                    var colorScale = d3.scale.quantile()
+                    var colorScale = d3.scaleQuantile()
                         .domain([0, buckets - 1, d3.max(data, function (d) { return d.value; })])
                         .range(colors);
                     var cards = svg.selectAll(".hour")

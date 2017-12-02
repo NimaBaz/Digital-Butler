@@ -8,3 +8,32 @@ div button {
 .boxShadow {
     box-shadow: 8px 8px 5px #888888;
 }
+
+/* Change background color of buttons on hover */
+a:hover {
+    background-color: #ddd;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #000000;
+    text-decoration: none;
+    background-color: #ddd;
+}
+
+/* selected link */
+a:active {
+    color: #000000;
+    text-decoration: none;
+}
