@@ -6,14 +6,14 @@
             <h1>Digital Butler</h1>
             <br>
             <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="text" id="username" placeholder="Enter Username" name="uname" required>
 
-            <p>
+            <!-- <p>
                 <label><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
-            </p>
+            </p> -->
             <p>
-                <button type="submit" routerLink="/user"> Log In </button>
+                <button type="submit" (click)="auth('username')" > Log In </button>
 
             </p>
             <input type="checkbox" checked="checked"> Remember me            

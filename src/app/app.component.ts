@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-
+import { LoginComponent } from './login/login.component';
 declare var jquery:any;
 declare const $: any;
 @Component({

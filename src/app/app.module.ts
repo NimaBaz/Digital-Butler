@@ -2,10 +2,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {HttpClientModule} from '@angular/common/http';
 import { RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
+
 import { UserComponent } from './components/user/user.component';
 import { BubbleChartComponent } from './components/d3chart/bubbleChart/bubbleChart.component';
 import { HeatMapComponent } from './components/d3chart/heatMap/heatMap.component';
@@ -39,16 +40,24 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
-        path : 'user',
-        component: UserComponent
+        path: '',
+        redirectTo: 'login',
+        
+        pathMatch: 'full',
+      
       },
       {
         path: 'login',
         component: LoginComponent
+      },
+      {
+        path : 'user',
+        component: UserComponent
       }
+     
     ])
   ],
   providers: [],
