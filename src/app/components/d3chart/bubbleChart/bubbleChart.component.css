@@ -1,22 +1,22 @@
-.nodes circle {
+:host ::ng-deep .nodes circle {
     stroke: red	;
     stroke-width: 0px;
     color: red;
 }
 
-svg {
+:host ::ng-deep svg {
   border:0px solid black;
   margin-top: 5px;
   
 }
 
 /*d3 styling*/
-.links line {
+:host ::ng-deep .links line {
   stroke: #999;
   stroke-width: 1px;
 }
 
-div.tooltip {	
+:host ::ng-deep div.tooltip {	
   position: absolute;			
   text-align: center;			
   width: 200px;					
