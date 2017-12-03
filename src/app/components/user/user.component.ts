@@ -18,8 +18,9 @@ export class UserComponent implements OnInit {
             
       console.log("Local storage: " + localStorage.getItem('loggedIn'));
       if(localStorage.getItem('loggedIn') == "false") {
-        
+        alert("Please log in first");
         this.router.navigate(['login']);
+        $("#logout").hide();
       } else {
         $("#logout").show();
       }
