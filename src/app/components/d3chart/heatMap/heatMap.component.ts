@@ -100,16 +100,6 @@ export class HeatMapComponent implements OnInit {
         };
 
         heatmapChart(datasets[0]);
-    
-        var datasetpicker = d3.select("#dataset-picker").selectAll(".dataset-button")
-            .data(datasets);
-        datasetpicker.enter()
-            .append("input")
-            .attr("value", function(d){ return "Dataset " + d })
-            .attr("type", "button")
-            .attr("class", "dataset-button")
-            .on("click", function(d) {
-                heatmapChart(d);
-            });      
+         
     }
 }

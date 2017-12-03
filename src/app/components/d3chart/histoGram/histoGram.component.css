@@ -1,8 +1,10 @@
-.bar rect {
-    fill: steelblue;
-  }
+:host ::ng-deep .area {
+  fill: #74BEEF;
+  clip-path: url(#clip);
+}
 
-.bar text {
-    fill: #fff;
-    font: 10px sans-serif;
-  }
+:host ::ng-deep .zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
