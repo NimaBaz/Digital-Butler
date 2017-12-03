@@ -38,6 +38,7 @@ editorconfig
 .\src\app\components\device_care\
 .\src\app\components\wifi_care\
 *.swp
+*/d3mini.js
 
 # e2e
 /e2e/*.js
