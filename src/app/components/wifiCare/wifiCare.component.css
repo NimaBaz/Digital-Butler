@@ -87,7 +87,12 @@ subText{
     height: 23%;
     margin-left: -9%;
     margin-top:-10%;
-    border-style: inset;
+    border-style: outset;
     border-width: 5px;
-    border-color: rgba(151, 150, 150, 0.2);
+    border-color: rgba(151, 150, 150, 0.25);
+    box-shadow: 10px 10px 5px rgba(151, 150, 150, 0.4);
+}
+
+.close{
+    text-align: right;
 }
