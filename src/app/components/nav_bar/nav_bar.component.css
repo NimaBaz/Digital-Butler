@@ -30,7 +30,7 @@
 
 /* The Close Button */
 .close {
-    /* Position it in the top right corner outside of the modal */
+    /* Position it in the top right corner inside of the modal */
     position: absolute;
     right: 25px;
     top: 0; 

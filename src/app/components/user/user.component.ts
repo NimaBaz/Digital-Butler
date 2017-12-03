@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserAccountService } from './user-account.service';
 
 declare var jquery:any;
 declare const $: any;
@@ -8,16 +9,13 @@ declare const $: any;
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  name:string;
-  width:number;
-  id:number;
-  minimId:number;
-  constructor() {
+
+  constructor(private user:UserAccountService) {
     console.log('constructor ran..');
   }
 
     ngOnInit() {
-        
+      console.log('Is user logged in?', this.user.getUserLoggedIn());
     }
 
     /* functions for minimizing/closing cards */
@@ -36,23 +34,6 @@ export class UserComponent implements OnInit {
     minimize3(id_) {
             var div_to_toggle = '#' + id_ ;
             $(div_to_toggle).slideToggle();
-    }
-
-    /*stuff for pop ups*/
-    myFunction(some_eventID) {
-        var popup = document.getElementById(some_eventID);
-        popup.classList.toggle("show");
-    
-    }
-    
-    // Get the modal
-    myFunction2(some_eventID) {
-    var modal = document.getElementById(some_eventID);
-            modal.style.display = "block";
-    }
-    closeFunct(some_eventID){
-      var modal = document.getElementById(some_eventID);
-      modal.style.display = "none";
     }
 
 }

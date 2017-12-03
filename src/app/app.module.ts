@@ -19,6 +19,8 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { NavBarComponent } from './components/nav_bar/nav_bar.component';
 import { ReportComponent } from './components/report/report.component';
 import { LoginComponent } from './login/login.component';
+import { UserAccountService } from './components/user/user-account.service';
+/*import { AuthenticationGuard } from './login/authentication.guard';*/
 
 @NgModule({
   declarations: [
@@ -55,12 +57,13 @@ import { LoginComponent } from './login/login.component';
       },
       {
         path : 'user',
+        /*canActivate: [AuthenticationGuard],*/
         component: UserComponent
       }
      
     ])
   ],
-  providers: [],
+  providers: [UserAccountService, /*AuthenticationGuard*/],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
