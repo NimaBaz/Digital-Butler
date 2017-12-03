@@ -1,11 +1,16 @@
 #toolbar a{
-    padding: 0px;
     margin: 0px;
+}
+
+.toolbarimg {
+    width: 60%;
+    height: 60%;
+    margin: 0;
 }
 div button {
     float:right;
 }
-.boxShadow {
+.box {
     box-shadow: 8px 8px 5px #888888;
 }
 

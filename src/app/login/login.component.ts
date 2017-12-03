@@ -30,10 +30,7 @@ export class LoginComponent implements OnInit {
           this.router.navigate(['user']);
          
       }, err => {
-<<<<<<< HEAD
           alert("Wrong username, please try again.");
-=======
->>>>>>> 473afac4e325fb379d7fb97919edf83c6a77f5da
           var small_modal = document.getElementById("errorPopup");
           small_modal.style.display = "block";
           console.log("something is wrong");
@@ -41,17 +38,11 @@ export class LoginComponent implements OnInit {
     );
   }
 
-<<<<<<< HEAD
   /*
-=======
->>>>>>> 473afac4e325fb379d7fb97919edf83c6a77f5da
   closeModal(some_ID){
     var modal = document.getElementById(some_ID);
     modal.style.display = "none";
   }
-<<<<<<< HEAD
   */
-=======
->>>>>>> 473afac4e325fb379d7fb97919edf83c6a77f5da
 
 }
