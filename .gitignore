@@ -40,6 +40,10 @@ editorconfig
 *.swp
 */d3mini.js
 
+api-curl
+api-testing.js
+api-testing.html
+
 # e2e
 /e2e/*.js
 /e2e/*.map
