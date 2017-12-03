@@ -78,28 +78,11 @@ export class HeatMapComponent implements OnInit {
                     cards.select("title").text(function(d) { return d.value; });
             
                     cards.exit().remove();
-                    var legend = svg.selectAll(".legend")
-                        .data([0].concat(colorScale.quantiles()), function(d) { return d; });
-                    legend.enter().append("g")
-                        .attr("class", "legend");
-                    legend.append("rect")
-                        .attr("x", function(d, i) { return legendElementWidth * i; })
-                        .attr("y", height)
-                        .attr("width", legendElementWidth)
-                        .attr("height", gridSize / 2)
-                        .style("fill", function(d, i) {
-                            let colorInt = i % 2;
-                            return colors[colorInt]; });
-                    legend.append("text")
-                        .attr("class", "mono")
-                        .text(function(d) { return "≥ " + Math.round(d); })
-                        .attr("x", function(d, i) { return legendElementWidth * i; })
-                        .attr("y", height + gridSize);
-                    legend.exit().remove();
+                    
                 });  
         };
-
+        // don't delete this, this is not a typo
         heatmapChart(datasets[0]);
-         
+        heatmapChart(datasets[0]); 
     }
 }
