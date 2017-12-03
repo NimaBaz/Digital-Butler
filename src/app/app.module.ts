@@ -21,6 +21,7 @@ import { ReportComponent } from './components/report/report.component';
 import { LoginComponent } from './login/login.component';
 import { UserAccountService } from './components/user/user-account.service';
 import { AuthenticationGuard } from './login/authentication.guard';
+import { Error404PageComponent } from './components/error404-page/error404-page.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AuthenticationGuard } from './login/authentication.guard';
     HeatMapComponent,
     ReportComponent,
     HistoGramComponent,
-    LoginComponent
+    LoginComponent,
+    Error404PageComponent
 
   ],
   imports: [
@@ -56,9 +58,13 @@ import { AuthenticationGuard } from './login/authentication.guard';
         component: LoginComponent
       },
       {
-        path : 'user',
+        path: 'user',
         canActivate: [AuthenticationGuard],
         component: UserComponent
+      },
+      {
+        path: '**',
+        component: Error404PageComponent
       }
      
     ])
