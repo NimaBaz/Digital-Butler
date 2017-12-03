@@ -16,8 +16,9 @@ export class UserComponent implements OnInit {
 
     ngOnInit() {
             
-     
-      if(!localStorage.getItem('loggedIn')) {
+      console.log("Local storage: " + localStorage.getItem('loggedIn'));
+      if(localStorage.getItem('loggedIn') == "false") {
+        
         this.router.navigate(['login']);
       } else {
         $("#logout").show();
