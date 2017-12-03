@@ -1,0 +1,7 @@
+curl -v -X GET 'https://hlabsdemos.com:8080/auth_svc/get_user_info?userid=nico@holisticlabs.net'
+
+curl -v -H 'Origin: https://hlabsdemos.com:3102'-X POST 'https://hlabsdemos.com:8082/webapp/topology' -d '
+{
+    "homeid": "44ddfbdc50b7000001",
+    "timestamp": "1512185260373"
+}'

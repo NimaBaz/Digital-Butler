@@ -76,3 +76,11 @@ Component Design Document -
                                            +-----------+
 
 </pre>
+
+****************************************************************
+To run d3 charts correcctly:
+cd Digital-Butler\src\app\components\d3chart\heatMap
+C:\Python27\python.exe -m SimpleHTTPServer 8000
+
+you will also need to allow cross origin request 
+nico@holisticlabs.net

@@ -1,27 +1,27 @@
-rect.bordered {
+:host ::ng-deep rect.bordered {
   stroke: #E6E6E6;
   stroke-width:2px;   
 }
-text.mono {
+:host ::ng-deep text.mono {
   font-size: 9pt;
   font-family: Consolas, courier;
   fill: #aaa;
 }
-text.axis-workweek {
+:host ::ng-deep text.axis-workweek {
   fill: #000;
 }
-text.axis-worktime {
+:host ::ng-deep text.axis-worktime {
   fill: #000;
 }
 
-.chartDisplay {
+:host ::ng-deep .chartDisplay {
   background-color: white;
   padding-left: 50px;
   padding-right: 50px;
   margin-top: 50px;
 }
 
-.choiceDisplay {
+:host ::ng-deep .choiceDisplay {
   background-color: white;
   padding: 50px;
 }
