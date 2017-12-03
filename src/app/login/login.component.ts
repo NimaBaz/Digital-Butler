@@ -16,6 +16,7 @@ export class LoginComponent implements OnInit {
   constructor(private http: HttpClient, public router: Router, private user: UserAccountService) {}
   
   ngOnInit() {
+    console.log('Is user logged in?', this.user.getUserLoggedIn());
   }
 
   auth(username:string) {

@@ -9,18 +9,13 @@ declare const $: any;
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  name:string;
-  width:number;
-  id:number;
-  minimId:number;
-
 
   constructor(private user:UserAccountService) {
     console.log('constructor ran..');
   }
 
     ngOnInit() {
-        
+      console.log('Is user logged in?', this.user.getUserLoggedIn());
     }
 
     /* functions for minimizing/closing cards */

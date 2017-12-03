@@ -2,11 +2,11 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class UserAccountService {
-  private isUserLoggedIn;
+  public isUserLoggedIn;
   private username;
 
   constructor() {
-    this.isUserLoggedIn = false;
+    this.isUserLoggedIn=false;
   }
   
   setUserToLoggedIn(){
