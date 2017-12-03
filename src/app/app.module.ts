@@ -59,6 +59,10 @@ import { UserAccountService } from './components/user/user-account.service';
         path : 'user',
         /*canActivate: [AuthenticationGuard],*/
         component: UserComponent
+      },
+      {
+        path: '**',
+        component: Error404PageComponent
       }
      
     ])
