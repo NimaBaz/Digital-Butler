@@ -8,7 +8,9 @@ export class UserAccountService {
   constructor() {
     this.isUserLoggedIn=false;
   }
-  
+  setUserToLoggedOut(){
+    this.isUserLoggedIn=false;
+  }
   setUserToLoggedIn(){
     this.isUserLoggedIn = true;
   }

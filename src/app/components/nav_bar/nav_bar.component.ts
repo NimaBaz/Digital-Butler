@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { UserAccountService } from '../user/user-account.service';
 @Component({
     selector: 'app-nav_bar',
     templateUrl: './nav_bar.component.html',
@@ -9,12 +9,23 @@ import { Component, OnInit } from '@angular/core';
 
 export class NavBarComponent implements OnInit{
     name:string;
-    constructor() {
-    	console.log('constructor nav_bar..');
-      }
+    constructor(private user: UserAccountService) {
+    	
+    }
       
       ngOnInit(){
-        document.getElementById("defaultClick").click();
+       
+        if(!localStorage.getItem('loggedIn')) {
+          $("#logout").hide(); 
+        } 
+       
+        
+      }
+
+      logOut() {
+        this.user.setUserToLoggedOut();
+        localStorage.setItem('loggedIn',this.user.getUserLoggedIn());
+        $("#logout").hide();
       }
 }
 

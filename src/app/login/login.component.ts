@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   
   ngOnInit() {
     console.log('Is user logged in?', this.user.getUserLoggedIn());
+    console.log('Current url: ', this.router.url);
   }
 
   auth(username:string) {
@@ -28,7 +29,7 @@ export class LoginComponent implements OnInit {
           this.user.setUserToLoggedIn();
           console.log(data);        
           this.router.navigate(['user']);
-         
+          localStorage.setItem('loggedIn',this.user.getUserLoggedIn());
       }, err => {
           alert("Wrong username, please try again.");
           var small_modal = document.getElementById("errorPopup");

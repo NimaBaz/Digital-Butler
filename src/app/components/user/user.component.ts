@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserAccountService } from './user-account.service';
-
+import { Router } from '@angular/router';
 declare var jquery:any;
 declare const $: any;
 @Component({
@@ -10,12 +10,18 @@ declare const $: any;
 })
 export class UserComponent implements OnInit {
 
-  constructor(private user:UserAccountService) {
-    console.log('constructor ran..');
+  constructor(private user:UserAccountService, public router: Router) {
+    
   }
 
     ngOnInit() {
-      console.log('Is user logged in?', this.user.getUserLoggedIn());
+            
+     
+      if(!localStorage.getItem('loggedIn')) {
+        this.router.navigate(['login']);
+      } else {
+        $("#logout").show();
+      }
     }
 
     /* functions for minimizing/closing cards */
