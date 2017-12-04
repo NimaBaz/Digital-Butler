@@ -26,6 +26,16 @@ export class ReportComponent implements OnInit{
         this.width = $("#A1").width();
         console.log(this.width);
         $("span").width = this.width;
+        this.setDate();
+      }
+      setDate() {
+        this.setInitialDate();
+        setInterval(()=>{
+           this.setInitialDate();
+        }, 1000);
+        
+      }
+      setInitialDate() {
         var todayDate = new Date();
         var month = this.monthNames[todayDate.getMonth()];
         var day = todayDate.getDate();
@@ -45,8 +55,6 @@ export class ReportComponent implements OnInit{
         } else {
             min = minute;
         }
-       
-        
         document.getElementById('date').textContent = month + ", " + day + ", "+ year +" , "+ hour + ":" + min + " " + ampm;
       }
       openTab(evt, tabName) {

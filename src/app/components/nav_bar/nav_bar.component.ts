@@ -14,10 +14,9 @@ export class NavBarComponent implements OnInit{
     }
       
       ngOnInit(){
-       
-        if(!localStorage.getItem('loggedIn')) {
+     
           $("#logout").hide(); 
-        } 
+ 
        
         
       }
