@@ -43,7 +43,7 @@ export class ApiService {
 	};
 
 
-   	let fetchData = { 
+   	let requestInit = { 
 	    method: 'POST', 
 	    body: JSON.stringify(payload),
 	    headers: new Headers({"Content-Type": "application/json"})
@@ -51,7 +51,7 @@ export class ApiService {
 
 	// console.log(content);
 
-   	return fetch(this.core_svcRoot + deviceCareUrl, fetchData)
+   	return fetch(this.core_svcRoot + deviceCareUrl, requestInit)
   	.then((resp) => resp.json()) // Transform the data into json
   	.then(function(data) {
     	return data;
