@@ -26,7 +26,7 @@ export class ApiService {
 
    }
 
-   deviceCareAPI(){
+   fetchData(){
    	let deviceCareUrl = 'home/api?func=digitalhome_service&action=retrieve';
    	console.log("deviceCare testing");
 

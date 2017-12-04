@@ -24,8 +24,8 @@ export class DeviceCareComponent implements OnInit{
       }
 
       ngOnInit() {
-        // console.log(this.apiService.deviceCareAPI());
-        this.apiService.deviceCareAPI().then(data =>{
+        this.apiService.fetchData().then(data =>{
+          // console.log(data);
           for( let deviceInd in data.devices){
             let device = data.devices[deviceInd];
             if (device.band === "2.4GHz"){
