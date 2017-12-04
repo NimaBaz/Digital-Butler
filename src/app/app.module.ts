@@ -20,6 +20,7 @@ import { NavBarComponent } from './components/nav_bar/nav_bar.component';
 import { ReportComponent } from './components/report/report.component';
 import { LoginComponent } from './login/login.component';
 import { UserAccountService } from './components/user/user-account.service';
+import { Error404PageComponent } from './components/error404-page/error404-page.component'
 /*import { AuthenticationGuard } from './login/authentication.guard';*/
 
 @NgModule({
@@ -36,7 +37,8 @@ import { UserAccountService } from './components/user/user-account.service';
     HeatMapComponent,
     ReportComponent,
     HistoGramComponent,
-    LoginComponent
+    LoginComponent,
+    Error404PageComponent
 
   ],
   imports: [
@@ -59,13 +61,12 @@ import { UserAccountService } from './components/user/user-account.service';
         path : 'user',
         /*canActivate: [AuthenticationGuard],*/
         component: UserComponent
-      }
-      /*,
+      },
       {
         path: '**',
         component: Error404PageComponent
       }
-      */
+    
     ])
   ],
   providers: [UserAccountService /*AuthenticationGuard*/],
