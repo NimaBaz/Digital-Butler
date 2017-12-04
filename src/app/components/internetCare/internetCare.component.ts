@@ -23,7 +23,7 @@ export class InternetCareComponent implements OnInit{
       
       ngOnInit(){
         this.apiService.fetchData().then(data =>{
-          console.log(data);
+          // console.log(data);
           this.DNS_status = data.network_status.dnsstatus,
           this.up_speed = 
            Math.floor(data.network_status.maxbandwidth.maxtcpulbw).toString() 

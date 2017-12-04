@@ -1,20 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../user/api.service';
 declare var jquery:any;
 declare const $: any;
 @Component({
     selector: 'app-wifiCare',
     templateUrl: './wifiCare.component.html',
     styleUrls: ['./wifiCare.component.css', 
-    '../user/user.component.css']
+    '../user/user.component.css'],
+    providers: [ApiService]
 })
 
 export class WifiCareComponent implements OnInit{
     name:string;
-    constructor() {
+    neighbor_home_channel = 0;
+    constructor(private apiService: ApiService) {
     	console.log('constructor wifi_care..');
       }
       
       ngOnInit(){
+        this.apiService.fetchData().then(data =>{
+          this.neighbor_home_channel = 
+          data.network_status.bssidnbourlist.length;
+        })
 
       }
       minimize(id_) { 

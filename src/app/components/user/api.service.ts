@@ -28,7 +28,7 @@ export class ApiService {
 
    fetchData(){
    	let deviceCareUrl = 'home/api?func=digitalhome_service&action=retrieve';
-   	console.log("deviceCare testing");
+   	// console.log("deviceCare testing");
 
 	let payload = {
     	userid: "nico@holisticlabs.net",
