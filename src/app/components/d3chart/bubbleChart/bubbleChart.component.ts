@@ -3,7 +3,7 @@ import * as d3 from 'd3';
 @Component({
   selector: 'app-bubbleChart',
   templateUrl: './bubbleChart.component.html',
-  styleUrls: ['./bubbleChart.component.css']
+  styleUrls: ['./bubbleChart.component.css'],
 })
 
 export class BubbleChartComponent implements OnInit {
@@ -15,7 +15,7 @@ export class BubbleChartComponent implements OnInit {
   	ngOnInit() {
 
         /* D3 bubble chart implementation */
-     
+        
         var svg = d3.select("svg"),
         width = +svg.attr("width"),
         height = +svg.attr("height");  
