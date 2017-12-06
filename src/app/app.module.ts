@@ -20,7 +20,8 @@ import { NavBarComponent } from './components/nav_bar/nav_bar.component';
 import { ReportComponent } from './components/report/report.component';
 import { LoginComponent } from './login/login.component';
 import { UserAccountService } from './components/user/user-account.service';
-import { Error404PageComponent } from './components/error404-page/error404-page.component'
+import { Error404PageComponent } from './components/error404-page/error404-page.component';
+// import { PopupComponent } from './components/popup/popup.component'
 /*import { AuthenticationGuard } from './login/authentication.guard';*/
 
 @NgModule({
@@ -38,7 +39,8 @@ import { Error404PageComponent } from './components/error404-page/error404-page.
     ReportComponent,
     HistoGramComponent,
     LoginComponent,
-    Error404PageComponent
+    Error404PageComponent,
+    // PopupComponent
 
   ],
   imports: [

@@ -24,7 +24,7 @@ export class BubbleChartComponent implements OnInit {
         document.getElementById("defaultOpen").click();
 
 
-        var svg = d3.select("svg"),
+        var svg = d3.select("#bubble_chart"),
         width = +svg.attr("width"),
         height = +svg.attr("height");
         
