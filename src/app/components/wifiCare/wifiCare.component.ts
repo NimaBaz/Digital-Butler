@@ -35,16 +35,16 @@ export class WifiCareComponent implements OnInit{
         $("#" + id_).show();
       }
 
-      smallModal(some_ID) {
-        var small_modal = document.getElementById(some_ID);
+      smallModal(id_) {
+        var small_modal = document.getElementById(id_);
         small_modal.style.display = "block";
       }
-      normalModal(some_ID) {
-        var modal = document.getElementById(some_ID);
+      normalModal(id_) {
+        var modal = document.getElementById(id_);
         modal.style.display = "block";
       }
-      closeModal(some_ID){
-        var modal = document.getElementById(some_ID);
+      closeModal(id_){
+        var modal = document.getElementById(id_);
         modal.style.display = "none";
       }
 }

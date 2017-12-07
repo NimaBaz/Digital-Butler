@@ -20,8 +20,7 @@ import { NavBarComponent } from './components/nav_bar/nav_bar.component';
 import { ReportComponent } from './components/report/report.component';
 import { LoginComponent } from './login/login.component';
 import { UserAccountService } from './components/user/user-account.service';
-import { Error404PageComponent } from './components/error404-page/error404-page.component'
-/*import { AuthenticationGuard } from './login/authentication.guard';*/
+import { Error404PageComponent } from './components/error404-page/error404-page.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +37,7 @@ import { Error404PageComponent } from './components/error404-page/error404-page.
     ReportComponent,
     HistoGramComponent,
     LoginComponent,
-    Error404PageComponent
+    Error404PageComponent,
 
   ],
   imports: [
@@ -59,7 +58,6 @@ import { Error404PageComponent } from './components/error404-page/error404-page.
       },
       {
         path : 'user',
-        /*canActivate: [AuthenticationGuard],*/
         component: UserComponent
       },
       {
@@ -69,7 +67,7 @@ import { Error404PageComponent } from './components/error404-page/error404-page.
     
     ])
   ],
-  providers: [UserAccountService /*AuthenticationGuard*/],
+  providers: [UserAccountService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

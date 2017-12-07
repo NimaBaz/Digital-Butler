@@ -39,11 +39,4 @@ export class LoginComponent implements OnInit {
     );
   }
 
-  /*
-  closeModal(some_ID){
-    var modal = document.getElementById(some_ID);
-    modal.style.display = "none";
-  }
-  */
-
 }

@@ -15,6 +15,7 @@ export class HeatMapComponent implements OnInit {
   	ngOnInit() {
 
         /*D3 heatmap implementation */
+        // console.log(d3.selectAll("#chart"));
         
         var margin = { top: 50, right: 0, bottom: 100, left: 30 },
             width = 960 - margin.left - margin.right,
@@ -26,7 +27,7 @@ export class HeatMapComponent implements OnInit {
             days = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
             times = ["1a", "2a", "3a", "4a", "5a", "6a", "7a", "8a", "9a", "10a", "11a", "12a", "1p", "2p", "3p", "4p", "5p", "6p", "7p", "8p", "9p", "10p", "11p", "12p"],
             datasets = ["http://localhost:8000/binary1.tsv", "http://localhost:8000/binary2.tsv"];
-        var svg = d3.select("#chart").append("svg")
+        var svg = d3.selectAll("#chart").append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
             .append("g")

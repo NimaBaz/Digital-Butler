@@ -16,8 +16,6 @@ export class NavBarComponent implements OnInit{
       ngOnInit(){
      
           $("#logout").hide(); 
- 
-       
         
       }
 
