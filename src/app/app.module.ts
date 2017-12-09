@@ -1,6 +1,6 @@
 /* module for all components */
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { RouterModule} from '@angular/router';
@@ -68,6 +68,7 @@ import { Error404PageComponent } from './components/error404-page/error404-page.
     ])
   ],
   providers: [UserAccountService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

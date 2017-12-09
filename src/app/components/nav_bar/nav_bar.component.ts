@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserAccountService } from '../user/user-account.service';
+declare var jquery:any;
+declare const $: any;
 @Component({
     selector: 'app-nav_bar',
     templateUrl: './nav_bar.component.html',
