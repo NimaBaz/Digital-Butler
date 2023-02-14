@@ -1,4 +1,8 @@
 # Digital-Butler
+Digital Butler is an app that will aid providers with answering customer problems such as
+connection and home network issues. We mainly worked on the front end design of the product,
+a web app, that will be used for professional purposes (providers). The application will be able to
+show information/history of one’s home network and efficiently resolve connectivity issues.
 
 Download and install node.js 6.x
 
